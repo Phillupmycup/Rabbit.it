@@ -1,0 +1,666 @@
+body, html {
+    width: 100%;
+}
+
+body {
+    padding:0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(18, 19, 24);
+    /* background-color: black; */
+}
+
+html header .navbar {
+    align-items: baseline;
+    padding-top: 0%;
+    padding-bottom: 16pt;
+    background-color: rgb(18, 19, 24);
+}
+
+header .navbar .navbarNav {
+    align-items: baseline;
+}
+
+.navbar-brand {
+    padding-right: 20pt;
+}
+ .navbar-dark .navbar-nav .nav-link {
+     color: rgb(218, 218, 218);
+     margin-top: 10pt;
+}
+
+ .navbar-nav > li {
+     margin-left: 15pt;
+}
+ 
+
+@media screen and (min-width: 768px) {
+    
+
+ @media (hover: hover) {
+
+  a.it:hover ~ #collapse1 {
+    display: block;
+  }
+
+  #collapse1:hover {
+    display: block;
+  }
+
+  a.legal:hover ~ #collapse2 {
+    display: block;
+  }
+
+  #collapse2:hover {
+    display: block;
+  }
+
+  a.interact:hover ~ #collapse3 {
+    display: block;
+  }
+
+  #collapse3:hover {
+    display: block;
+  }
+
+ }
+
+}
+
+
+
+.collapse .dropdown-item {
+    color: #e1e2de;
+    padding-left: 0.5rem;
+}
+
+
+#collapse1 .dropdown-item:hover {
+    color: rgb(128, 74, 255);
+    background-color: black;
+}
+
+#collapse2 .dropdown-item:hover {
+    color: rgb(9, 255, 0);
+    background-color: black;
+}
+
+#collapse3 .dropdown-item:hover {
+    color: rgb(195, 0, 255);
+    background-color: black;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navbar-dark .navbar-nav #kontakt {
+        color: rgb(9, 255, 0);
+        border-radius: 68px;
+        cursor: pointer;
+        background-color: rgb(18, 19, 24);
+        padding-top: 0%;
+        padding-bottom: 0%;
+        border: solid rgb(9, 255, 0);
+        margin-top: 8pt;
+    }
+
+    .navbar-dark .navbar-nav #kontakt:hover {
+        background-color: rgb(9, 255, 0);
+        color: #2a2831;
+        border-color: #2a2831;
+    }
+}
+
+li.nav-item {
+    margin-left: 10px;
+}
+a.nav-link {
+    padding-bottom: 0%;
+}
+
+li.nav-item a.nav-link {
+    padding-top: 0%;
+}
+
+
+.bottombutton {
+    border-color: black;
+    font-size: larger;
+    border: solid black;
+    padding: 0%;
+}
+
+/*-------main start-------*/
+
+#main {
+    padding: 0%;
+    padding-top: 55pt;
+}
+
+
+.jumbo {
+    width: 100%;
+    padding: 0;
+    max-height: 625px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+video {
+    bottom: 0;
+    right: 0;
+    display: block;
+}
+
+.vidbox {
+    padding: 0;
+}
+
+
+@media screen and (min-width: 1145px) {
+    .box::before {
+        border: 340px solid transparent;
+        border-left: 175px solid rgb(180, 157, 229);
+        content: "";
+        position: absolute;
+        display: block;
+        height: 0;
+        width: 0;
+    
+        border-right: 0;
+    
+        top: 0;
+        left: 99.5%;
+        z-index: 2;
+
+    }
+    
+}
+
+@media screen and (max-width: 1145px) {
+    .box::before {
+        border: 28.17vw solid transparent;
+        border-left: 15vw solid rgb(180, 157, 229);
+        content: "";
+        position: absolute;
+        display: block;
+        height: 0;
+        width: 0;
+    
+        border-right: 0;
+    
+        top: 0;
+        left: 99.5%;
+        z-index: 2;
+
+    }
+    
+}
+
+.jumbo {
+    width: 100%;
+    padding: 0;
+    max-height: 625px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.vidtext {
+    position: absolute;
+    width: 35%;
+    top: 10%;
+    left: 3%;
+    z-index: 2;
+    
+}
+
+.vidtext h2 {
+    font-size: 3vw;
+}
+
+.vidtext p {
+    font-size: 1.7vw;
+}
+
+.box {
+    background-color: rgb(180, 157, 229);
+    display: block;
+    height: 100%;
+    width: 33%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.para-container {
+    position: absolute;
+    text-align: center;
+    top: -200px;
+    left: 50%;
+    z-index: 4;
+}
+
+.para {
+    width: 40px;
+    height: 200px;
+    margin: 20px;
+    transform: skew(20deg);
+    background-color: rgb(9, 255, 0);
+    display: inline-block;
+}
+
+@media screen and (min-width: 699px) {
+    
+}
+
+
+
+#fund {
+    position: relative;
+    margin-top: 60pt;
+    width: 95%;
+    margin-bottom: 40pt;
+}
+
+
+h1 {
+    color: #b4abdf;
+}
+
+.midvidinfo h1 {
+    margin-bottom: 25px;
+}
+
+section {
+    color: rgb(228, 228, 228);
+}
+
+li span {
+    color: #b4abdf;
+}
+
+.midvidinfo {
+    padding: 5%;
+}
+
+.midvidinfo h1 {
+    margin-bottom: 40px;
+}
+
+.links2 h1 {
+    color: rgb(218, 218, 218);
+}
+
+.links1 a {
+    color: rgb(18, 19, 24);
+    /* color: rgb(218, 218, 218); */
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 11px;
+    cursor: pointer;
+    background-color: #b4abdf;
+    /* background-color: black; */
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid #b4abdf;
+    /* border: solid rgb(9, 255, 0); */
+    border-width: 1px;
+    margin: .5%;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 991px) {
+    .links1 {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .links2 {
+        align-items: center;
+        text-align: center;
+    }
+
+
+}
+
+.links1 a:hover {
+    color: rgb(9, 255, 0);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 11px;
+    cursor: pointer;
+    background-color: rgb(18, 19, 24);
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid rgb(9, 255, 0);
+    border-width: 1px;
+    margin: .5%;
+    text-decoration: none;
+    
+}
+
+.links2 a {
+    color: rgb(218, 218, 218);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 11px;
+    cursor: pointer;
+    background-color: rgb(18, 19, 24);
+    /* background-color: black; */
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid rgb(218, 218, 218);
+    /* border: solid rgb(110, 75, 121); */
+    border-width: 1px;
+    margin: .5%;
+    white-space: nowrap;
+}
+
+.links2 a:hover {
+    color: #2a2831;
+    /* color: rgb(195, 0, 255); */
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 11px;
+    cursor: pointer;
+    background-color: rgb(218, 218, 218);
+    /* background-color: #2a2831; */
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid rgb(218, 218, 218);
+    /* border: solid rgb(195, 0, 255); */
+    border-width: 1px;
+    margin: .5%;
+    text-decoration: none;
+    
+}
+
+
+.jumbo2 {
+    width: 100%;
+    padding: 0;
+    max-height: 625px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    
+}
+
+video {
+    bottom: 0;
+    right: 0;
+    display: block;
+}
+
+.vidbox2 {
+    padding: 0;
+}
+
+.box2 {
+    background-color: rgb(180, 157, 229);
+    display: block;
+    height: 100%;
+    width: 33%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 1145px) {
+    .box2::before {
+        border: 340px solid transparent;
+        border-right: 175px solid rgb(180, 157, 229);
+        content: "";
+        position: absolute;
+        display: block;
+        height: 0;
+        width: 0;
+    
+        border-left: 0;
+    
+        top: 0;
+        right: 99.5%;
+        z-index: 2;
+
+    }
+    
+}
+
+@media screen and (max-width: 1145px) {
+    .box2::before {
+        border: 28.17vw solid transparent;
+        border-right: 15vw solid rgb(180, 157, 229);
+        content: "";
+        position: absolute;
+        display: block;
+        height: 0;
+        width: 0;
+    
+        border-left: 0;
+    
+        top: 0;
+        right: 99.5%;
+        z-index: 2;
+
+    }
+    
+}
+
+.vidtext2 {
+    position: absolute;
+    width: 33%;
+    bottom: 10px;
+    right: 3%;
+    z-index: 2;
+}
+
+.vidtext2 h2 {
+    font-size: 3vw;
+    text-align: right;
+}
+
+.vidtext2 p {
+    font-size: 1.7vw;
+    text-align: right;
+}
+
+.circle-container {
+    text-align: center;
+    top: -250px;
+    left: 15%;
+    z-index: 4;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(9, 255, 0);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle:hover {
+    transform: rotate(-25deg)
+}
+
+.circle h3 {
+    margin-top: 20%;
+}
+
+@media screen and (min-width: 525px) {
+    .circle-container {
+        position: absolute;
+        text-align: center;
+        top: -230px;
+        left: 15%;
+        z-index: 4;
+    }
+}
+
+
+#cube {
+    margin-top: 150px;
+    position: relative;
+}
+
+@media screen and (max-width: 524px) {
+    .circle-container {
+        text-align: center;
+        top: -100px;
+        z-index: 4;
+    }
+
+    #cube {
+        margin-top: 20px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #cube {
+        width: 95%;
+        
+    }
+}
+
+#cube section {
+    border: solid rgb(180, 157, 229);
+    height: 150px;
+    margin: 10px;
+    width: 29%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(180, 157, 229);
+    font-size: 20px;
+}
+
+.bottombut {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.bottombut a {
+    color: #2a2831;
+    background-color: rgb(180, 157, 229);
+    border-radius: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-weight: 500;
+}
+
+.bottombut a:hover {
+    cursor: pointer;
+    background-color: rgb(18, 19, 24);
+    border: solid rgb(9, 255, 0);
+    color: rgb(9, 255, 0) !important;
+    
+}
+
+@media screen and (max-width: 395px) {
+    .bottombut a {
+        font-size: 8.5vw;
+    }
+    
+}
+
+.vidtext3 {
+    position: absolute;
+    width: 35%;
+    bottom: 15%;
+    right: 3%;
+    z-index: 2;
+}
+
+.vidtext3 h2 {
+    font-size: 3vw;
+    text-align: right;
+}
+
+.vidtext3 p {
+    font-size: 1.7vw;
+    text-align: right;
+}
+
+/*------------ page outsourcing ------------*/
+
+.vidtext4 {
+    position: absolute;
+    width: 35%;
+    bottom: 3px;
+    right: 3%;
+    z-index: 2;
+}
+
+.vidtext4 h2 {
+    font-size: 3vw;
+    text-align: right;
+}
+
+.vidtext4 p {
+    font-size: 1.7vw;
+    text-align: right;
+}
+
+.outbody {
+    margin-top: 40px;
+    width: 95%;
+}
+
+
+
+
+.outbody .outheader p {
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.outoption {
+    margin-top: 40px;
+}
+
+.outoption .arrow {
+    position: relative;
+}
+.outoption .arrow p {
+    font-size: 10vw;
+    color: rgb(195, 0, 255);
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .outoption .arrow p {
+        transform: rotate(90deg);
+    }
+
+    
+}
+
+.outoption h2 {
+    color: rgb(9, 255, 0);
+}
+
+.outoption p {
+    color: whitesmoke;
+}
+
+.outoption li {
+    color: whitesmoke;
+}
+
