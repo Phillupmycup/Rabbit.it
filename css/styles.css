@@ -10,6 +10,9 @@ body {
     /* background-color: black; */
 }
 
+
+/* ----------------Navbar------------------------------------------------------------------------------------ */
+
 html header .navbar {
     align-items: baseline;
     padding-top: 0%;
@@ -66,7 +69,6 @@ header .navbar .navbarNav {
  }
 
 }
-
 
 
 .collapse .dropdown-item {
@@ -129,7 +131,11 @@ li.nav-item a.nav-link {
     padding: 0%;
 }
 
-/*-------main start-------*/
+
+
+
+/*------------------Jumbotron for all pages-------------------------------------------------------------------------*/
+
 
 #main {
     padding: 0%;
@@ -140,7 +146,6 @@ li.nav-item a.nav-link {
 .jumbo {
     width: 100%;
     padding: 0;
-    max-height: 625px;
     position: relative;
     overflow: hidden;
     
@@ -156,73 +161,6 @@ video {
     padding: 0;
 }
 
-
-@media screen and (min-width: 1145px) {
-    .box::before {
-        border: 340px solid transparent;
-        border-left: 175px solid rgb(180, 157, 229);
-        content: "";
-        position: absolute;
-        display: block;
-        height: 0;
-        width: 0;
-    
-        border-right: 0;
-    
-        top: 0;
-        left: 99.5%;
-        z-index: 2;
-
-    }
-    
-}
-
-@media screen and (max-width: 1145px) {
-    .box::before {
-        border: 28.17vw solid transparent;
-        border-left: 15vw solid rgb(180, 157, 229);
-        content: "";
-        position: absolute;
-        display: block;
-        height: 0;
-        width: 0;
-    
-        border-right: 0;
-    
-        top: 0;
-        left: 99.5%;
-        z-index: 2;
-
-    }
-    
-}
-
-.jumbo {
-    width: 100%;
-    padding: 0;
-    max-height: 625px;
-    position: relative;
-    overflow: hidden;
-    
-}
-
-.vidtext {
-    position: absolute;
-    width: 35%;
-    top: 10%;
-    left: 3%;
-    z-index: 2;
-    
-}
-
-.vidtext h2 {
-    font-size: 3vw;
-}
-
-.vidtext p {
-    font-size: 1.7vw;
-}
-
 .box {
     background-color: rgb(180, 157, 229);
     display: block;
@@ -233,6 +171,124 @@ video {
     top: 0;
     left: 0;
 }
+
+.box::before {
+    border: 28.17vw solid transparent;
+    border-left: 15vw solid rgb(180, 157, 229);
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    border-right: 0;
+    top: 0;
+    left: 99.5%;
+    z-index: 2;
+}
+    
+.vidtext {
+    position: absolute;
+    width: 35%;
+    top: 10%;
+    left: 3%;
+    z-index: 2;
+}
+
+.vidtext h2 {
+    font-size: 3vw;
+}
+
+.vidtext p {
+    font-size: 1.7vw;
+}
+
+
+.box2 {
+    background-color: rgb(180, 157, 229);
+    display: block;
+    height: 100%;
+    width: 33%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.box2::before {
+    border: 28.17vw solid transparent;
+    border-right: 15vw solid rgb(180, 157, 229);
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+
+    border-left: 0;
+
+    top: 0;
+    right: 99.5%;
+    z-index: 2;
+}
+    
+.vidtext2 {
+    position: absolute;
+    width: 33%;
+    bottom: 10px;
+    right: 3%;
+    z-index: 2;
+}
+
+.vidtext2 h2 {
+    font-size: 3vw;
+    text-align: right;
+}
+
+.vidtext2 p {
+    font-size: 1.7vw;
+    text-align: right;
+}
+
+.vidtext3 {
+    position: absolute;
+    width: 35%;
+    bottom: 15%;
+    right: 3%;
+    z-index: 2;
+}
+
+.vidtext3 h2 {
+    font-size: 3vw;
+    text-align: right;
+}
+
+.vidtext3 p {
+    font-size: 1.7vw;
+    text-align: right;
+}
+
+.vidtext4 {
+    position: absolute;
+    width: 35%;
+    bottom: 3px;
+    right: 3%;
+    z-index: 2;
+}
+
+.vidtext4 h2 {
+    font-size: 3vw;
+    text-align: right;
+}
+
+.vidtext4 p {
+    font-size: 1.7vw;
+    text-align: right;
+}
+
+
+
+
+/* ------------Rabbit IT Main------------------------------------------------------------------------- */
+
 
 .para-container {
     position: absolute;
@@ -251,11 +307,6 @@ video {
     display: inline-block;
 }
 
-@media screen and (min-width: 699px) {
-    
-}
-
-
 
 #fund {
     position: relative;
@@ -265,29 +316,34 @@ video {
 }
 
 
-h1 {
+#fund h1 {
     color: #b4abdf;
 }
 
-.midvidinfo h1 {
+.mainpagelinks h1 {
     margin-bottom: 25px;
 }
 
-section {
+#fund section {
     color: rgb(228, 228, 228);
 }
 
-li span {
+#fund li span {
     color: #b4abdf;
 }
 
-.midvidinfo {
+.mainpagelinks {
     padding: 5%;
 }
 
-.midvidinfo h1 {
+.mainpagelinks h1 {
     margin-bottom: 40px;
 }
+
+.links1 h1 {
+    color: #b4abdf;
+}
+
 
 .links2 h1 {
     color: rgb(218, 218, 218);
@@ -311,21 +367,6 @@ li span {
     border-width: 1px;
     margin: .5%;
     white-space: nowrap;
-}
-
-@media screen and (max-width: 991px) {
-    .links1 {
-        align-items: center;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .links2 {
-        align-items: center;
-        text-align: center;
-    }
-
-
 }
 
 .links1 a:hover {
@@ -383,98 +424,27 @@ li span {
     border-width: 1px;
     margin: .5%;
     text-decoration: none;
-    
 }
 
-
-.jumbo2 {
-    width: 100%;
-    padding: 0;
-    max-height: 625px;
-    position: relative;
-    overflow: hidden;
-    margin-top: 20px;
-    
-}
-
-video {
-    bottom: 0;
-    right: 0;
-    display: block;
-}
-
-.vidbox2 {
-    padding: 0;
-}
-
-.box2 {
-    background-color: rgb(180, 157, 229);
-    display: block;
-    height: 100%;
-    width: 33%;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-@media screen and (min-width: 1145px) {
-    .box2::before {
-        border: 340px solid transparent;
-        border-right: 175px solid rgb(180, 157, 229);
-        content: "";
-        position: absolute;
-        display: block;
-        height: 0;
-        width: 0;
-    
-        border-left: 0;
-    
-        top: 0;
-        right: 99.5%;
-        z-index: 2;
-
+@media screen and (max-width: 991px) {
+    .links1 {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
     }
-    
-}
 
-@media screen and (max-width: 1145px) {
-    .box2::before {
-        border: 28.17vw solid transparent;
-        border-right: 15vw solid rgb(180, 157, 229);
-        content: "";
-        position: absolute;
-        display: block;
-        height: 0;
-        width: 0;
-    
-        border-left: 0;
-    
-        top: 0;
-        right: 99.5%;
-        z-index: 2;
-
+    .links2 {
+        align-items: center;
+        text-align: center;
     }
-    
+
+
 }
 
-.vidtext2 {
-    position: absolute;
-    width: 33%;
-    bottom: 10px;
-    right: 3%;
-    z-index: 2;
-}
 
-.vidtext2 h2 {
-    font-size: 3vw;
-    text-align: right;
-}
 
-.vidtext2 p {
-    font-size: 1.7vw;
-    text-align: right;
-}
+/* ------------rabbit it consulting--------------------------------------------------------------------------   */
+
 
 .circle-container {
     text-align: center;
@@ -578,44 +548,6 @@ video {
         font-size: 8.5vw;
     }
     
-}
-
-.vidtext3 {
-    position: absolute;
-    width: 35%;
-    bottom: 15%;
-    right: 3%;
-    z-index: 2;
-}
-
-.vidtext3 h2 {
-    font-size: 3vw;
-    text-align: right;
-}
-
-.vidtext3 p {
-    font-size: 1.7vw;
-    text-align: right;
-}
-
-/*------------ page outsourcing ------------*/
-
-.vidtext4 {
-    position: absolute;
-    width: 35%;
-    bottom: 3px;
-    right: 3%;
-    z-index: 2;
-}
-
-.vidtext4 h2 {
-    font-size: 3vw;
-    text-align: right;
-}
-
-.vidtext4 p {
-    font-size: 1.7vw;
-    text-align: right;
 }
 
 .outbody {
