@@ -140,7 +140,6 @@ li.nav-item a.nav-link {
 .jumbo {
     width: 100%;
     padding: 0;
-    max-height: 625px;
     position: relative;
     overflow: hidden;
     
@@ -156,28 +155,6 @@ video {
     padding: 0;
 }
 
-
-@media screen and (min-width: 1145px) {
-    .box::before {
-        border: 340px solid transparent;
-        border-left: 175px solid rgb(180, 157, 229);
-        content: "";
-        position: absolute;
-        display: block;
-        height: 0;
-        width: 0;
-    
-        border-right: 0;
-    
-        top: 0;
-        left: 99.5%;
-        z-index: 2;
-
-    }
-    
-}
-
-@media screen and (max-width: 1145px) {
     .box::before {
         border: 28.17vw solid transparent;
         border-left: 15vw solid rgb(180, 157, 229);
@@ -195,12 +172,12 @@ video {
 
     }
     
-}
+
 
 .jumbo {
     width: 100%;
     padding: 0;
-    max-height: 625px;
+
     position: relative;
     overflow: hidden;
     
