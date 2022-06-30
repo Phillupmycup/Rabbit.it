@@ -7,6 +7,10 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgb(40, 42, 53);
+<<<<<<< HEAD
+=======
+    /* background-color: black; */
+>>>>>>> 8e9a6381d32c755dd11c70664522e525c3ab4f21
 }
 
 #main {
