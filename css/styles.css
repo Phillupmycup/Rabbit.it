@@ -6,7 +6,7 @@ body {
     padding:0%;
     width: 100%;
     height: 100%;
-    background-color: rgb(18, 19, 24);
+    background-color: rgb(40, 42, 53);
     /* background-color: black; */
 }
 
@@ -22,7 +22,7 @@ html header .navbar {
     align-items: baseline;
     padding-top: 0%;
     padding-bottom: 16pt;
-    background-color: rgb(18, 19, 24);
+    background-color: rgb(40, 42, 53);
 }
 
 header .navbar .navbarNav {
@@ -44,34 +44,33 @@ header .navbar .navbarNav {
 
 @media screen and (min-width: 768px) {
     
+    @media (hover: hover) {
 
- @media (hover: hover) {
+        a.it:hover ~ #collapse1 {
+            display: block;
+        }
 
-  a.it:hover ~ #collapse1 {
-    display: block;
-  }
+        #collapse1:hover {
+            display: block;
+        }
 
-  #collapse1:hover {
-    display: block;
-  }
+        a.legal:hover ~ #collapse2 {
+            display: block;
+        }
 
-  a.legal:hover ~ #collapse2 {
-    display: block;
-  }
+        #collapse2:hover {
+            display: block;
+        }
 
-  #collapse2:hover {
-    display: block;
-  }
+        a.interact:hover ~ #collapse3 {
+            display: block;
+        }
 
-  a.interact:hover ~ #collapse3 {
-    display: block;
-  }
+        #collapse3:hover {
+            display: block;
+        }
 
-  #collapse3:hover {
-    display: block;
-  }
-
- }
+    }
 
 }
 
@@ -83,35 +82,35 @@ header .navbar .navbarNav {
 
 
 #collapse1 .dropdown-item:hover {
-    color: rgb(195, 0, 255);
+    color: rgb(180, 157, 229);
     background-color: black;
 }
 
 #collapse2 .dropdown-item:hover {
-    color: rgb(9, 255, 0);
+    color: rgb(108, 221, 131);
     background-color: black;
 }
 
 #collapse3 .dropdown-item:hover {
-    color: rgb(128, 74, 255);
+    color: rgb(231, 121, 184);
     background-color: black;
 }
 
 
 @media screen and (min-width: 768px) {
     .navbar-dark .navbar-nav #kontakt {
-        color: rgb(9, 255, 0);
+        color: rgb(108, 221, 131);
         border-radius: 68px;
         cursor: pointer;
-        background-color: rgb(18, 19, 24);
+        background-color: rgb(40, 42, 53);
         padding-top: 0%;
         padding-bottom: 0%;
-        border: solid rgb(9, 255, 0);
+        border: solid rgb(108, 221, 131);
         margin-top: 8pt;
     }
 
     .navbar-dark .navbar-nav #kontakt:hover {
-        background-color: rgb(9, 255, 0);
+        background-color: rgb(108, 221, 131);
         color: #2a2831;
         border-color: #2a2831;
     }
@@ -147,6 +146,7 @@ li.nav-item a.nav-link {
     padding: 0;
     position: relative;
     overflow: hidden;
+    z-index: 0;
 }
 
 video {
@@ -170,7 +170,7 @@ video {
     display: block;
     height: 100%;
     width: 33%;
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     top: 0px;
     left: 0;
@@ -188,7 +188,7 @@ video {
     border-right: 0;
     top: o;
     left: 99.5%;
-    z-index: 2;
+    z-index: 3;
 }
     
 .vidtext {
@@ -196,16 +196,17 @@ video {
     width: 35%;
     top: 10%;
     left: 3%;
-    z-index: 2;
+    z-index: 4;
 }
 
 .vidtext h2 {
     font-size: 3vw;
-    color: rgb(195, 0, 255);
+    color: rgb(40, 42, 53);
 }
 
 .vidtext p {
     font-size: 1.7vw;
+    color: rgb(40, 42, 53);
 }
 
 
@@ -306,7 +307,7 @@ video {
     height: 200px;
     margin: 20px;
     transform: skew(20deg);
-    background-color: rgb(9, 255, 0);
+    background-color: rgb(108, 221, 131);
     display: inline-block;
 }
 
@@ -378,7 +379,7 @@ video {
     font-weight: bold;
     border-radius: 11px;
     cursor: pointer;
-    background-color: rgb(18, 19, 24);
+    background-color: rgb(40, 42, 53);
     padding-top: 0%;
     padding-bottom: 0%;
     padding-left: 5px;
@@ -396,7 +397,7 @@ video {
     font-weight: bold;
     border-radius: 11px;
     cursor: pointer;
-    background-color: rgb(18, 19, 24);
+    background-color: rgb(40, 42, 53);
     /* background-color: black; */
     padding-top: 0%;
     padding-bottom: 0%;
