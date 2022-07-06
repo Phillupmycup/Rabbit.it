@@ -14,6 +14,21 @@ body {
     margin-top: 90px;
 }
 
+#legal {
+    padding: 0%;
+    margin-top: 90px;
+}
+
+#interact {
+    padding: 0%;
+    margin-top: 90px;
+}
+
+#contact {
+    padding: 0%;
+    margin-top: 90px;
+}
+
 
 /* ----------------Navbar------------------------------------------------------------------------------------ */
 
@@ -34,6 +49,7 @@ header .navbar .navbarNav {
  .navbar-dark .navbar-nav .nav-link {
      color: rgb(218, 218, 218);
      margin-top: 10pt;
+     padding-left: 0;
 }
 
  .navbar-nav > li {
@@ -104,6 +120,7 @@ header .navbar .navbarNav {
         background-color: rgb(40, 42, 53);
         padding-top: 0%;
         padding-bottom: 0%;
+        padding-left: 0.5em;
         border: solid rgb(108, 221, 131);
         margin-top: 8pt;
     }
@@ -137,7 +154,7 @@ li.nav-item a.nav-link {
 
 
 
-/*------------------Jumbotron for all pages-------------------------------------------------------------------------*/
+/*------------------Jumbotron for IT-------------------------------------------------------------------------*/
 
 
 .jumbo {
@@ -162,6 +179,7 @@ video {
 .jumbo span {
     color: rgb(195, 0, 255);;
     font-size: 3vw;
+    text-shadow: .15vw .15vw black;
 }
 
 .box {
@@ -327,11 +345,11 @@ video {
 }
 
 @media screen and (max-width: 412px) {
-    #main .imcurious a {
+    #main .imcurious {
         font-size: 7.8vw;
     }
 
-    #main .outbody .imcurious a {
+    #main .outbody .imcurious {
         font-size: 6vw;
     }
     
@@ -354,6 +372,214 @@ video {
 
 
 
+/* --------------------------------jumbotron for legal ------------------------------------------------------ */
+
+#legal .jumbo span {
+    color: rgb(72, 156, 89);
+}
+
+#legal .box {
+    background-color: rgb(108, 221, 131);
+    display: block;
+    height: 100%;
+    width: 33%;
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    
+}
+
+#legal .box::before {
+    border: 25vw solid transparent;
+    border-left: 12vw solid rgb(108, 221, 131);
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    border-right: 0;
+    top: o;
+    left: 99.5%;
+    z-index: 3;
+}
+
+.jumbo p {
+    line-height: 1;
+    margin-bottom: 5%;
+}
+
+.jumbo h2 {
+    line-height: 1;
+}
+
+.jumbo h2 span {
+    line-height: 1.5;
+}
+    
+.vidtext {
+    position: absolute;
+    width: 100%;
+    top: 8%;
+    left: 3%;
+    z-index: 4;
+}
+
+.vidtext h2 {
+    font-size: 3vw;
+    color: rgb(40, 42, 53);
+}
+
+.vidtext p {
+    font-size: 1.7vw;
+    color: rgb(40, 42, 53);
+    margin-bottom: 2%;
+}
+
+#legal .imcurious {
+    text-align: center;
+}
+
+#legal .imcurious a {
+    color: #2a2831;
+    background-color: rgb(180, 157, 229);
+    border-radius: 35px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: .5%;
+    padding-top: .5%;
+    font-weight: 500;
+}
+
+#legal .imcurious a:hover {
+    cursor: pointer;
+    background-color: rgb(40, 42, 53);
+    border: solid rgb(9, 255, 0);
+    border-width: 1px;
+    color: rgb(9, 255, 0) !important;
+    
+}
+
+#legal .box .imcurious a {
+    color: rgb(231, 121, 184);
+    background-color: rgb(40, 42, 53);
+    border: solid rgb(231, 121, 184);
+    border-width: 1px;
+}
+
+#legal .box .imcurious a:hover {
+    cursor: pointer;
+    background-color: rgb(40, 42, 53);
+    border: solid rgb(243, 49, 159);
+    border-width: 1px;
+    color: rgb(243, 49, 159) !important;
+    
+}
+
+#legal .box .imcurious {
+    z-index: 4;
+    margin-top: 4%;
+    padding-left: 0%;
+    font-size: 1.7vw;
+    text-align: left;
+}
+
+/* --------------------------------jumbotron for Interact ------------------------------------------------------ */
+
+
+#interact .jumbo span {
+    color: rgb(196, 50, 132);
+}
+
+#interact .box {
+    background-color: rgb(231, 121, 184);
+    display: block;
+    height: 100%;
+    width: 33%;
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    
+}
+
+#interact .box::before {
+    border: 25vw solid transparent;
+    border-left: 12vw solid rgb(231, 121, 184);
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    border-right: 0;
+    top: o;
+    left: 99.5%;
+    z-index: 3;
+}
+
+#interact .box h2 {
+    margin-bottom: 0%;
+}
+
+#interact .box ul {
+    margin-left: 0;
+    padding-left: 8%;
+    margin-bottom: 5%;
+}
+#interact .box li {
+    font-size: 1.1vw;
+}
+
+@media screen and (max-width: 575px) {
+    
+}
+
+#interact .imcurious {
+    text-align: center;
+}
+
+#interact .imcurious a {
+    color: #2a2831;
+    background-color: rgb(180, 157, 229);
+    border-radius: 35px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: .5%;
+    padding-top: .5%;
+    font-weight: 500;
+}
+
+#interact .imcurious a:hover {
+    cursor: pointer;
+    background-color: rgb(40, 42, 53);
+    border: solid rgb(9, 255, 0);
+    border-width: 1px;
+    color: rgb(9, 255, 0) !important;
+    
+}
+
+#interact .box .imcurious a {
+    color: rgb(180, 157, 229);
+    background-color: rgb(40, 42, 53);
+    border: solid rgb(180, 157, 229);
+    border-width: 1px;
+}
+
+#interact .box .imcurious a:hover {
+    cursor: pointer;
+    background-color: rgb(40, 42, 53);
+    border: solid rgb(137, 95, 228);
+    border-width: 1px;
+    color: rgb(137, 95, 228) !important; 
+}
+
+#interact .box .imcurious {
+    z-index: 4;
+    margin-top: 2%;
+    padding-left: 0%;
+    font-size: 1.7vw;
+    text-align: left;
+}
 
 /* ------------Rabbit IT Main------------------------------------------------------------------------- */
 
@@ -367,9 +593,9 @@ video {
 }
 
 .para {
-    width: 40px;
-    height: 200px;
-    margin: 20px;
+    width: 36px;
+    height: 180px;
+    margin: 17px;
     transform: skew(20deg);
     background-color: rgb(108, 221, 131);
     display: inline-block;
@@ -385,7 +611,7 @@ video {
 
 
 #fund h1 {
-    color: #b4abdf;
+    color: rgb(180, 157, 229);
 }
 
 #fund section {
@@ -545,6 +771,7 @@ video {
 #cube {
     margin-top: 150px;
     position: relative;
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 524px) {
@@ -664,5 +891,307 @@ video {
     
 }
 
+
+/* ----------------------------------------------Rabbit IT support ------------------------------------------ */
+
+.supportlinks {
+    margin-top: 7%;
+    width: 90%;
+}
+
+
+.supportlinks a:hover {
+    text-decoration: none;
+    border: .3vw dotted rgb(108, 221, 131);
+}
+
+.supportlinks a:hover h4 , .supportlinks a:hover div {
+    color: rgb(108, 221, 131);
+}
+
+
+
+.supportlinks h4 {
+    color: rgb(180, 157, 229);
+    text-align: center;
+    font-size: 1.9vw;
+    line-height: 2.5;
+}
+
+.emaillink, .phonelink, .downloadlink {
+    border: .3vw solid rgb(180, 157, 229);
+}
+
+.bi {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 7vw;
+}
+
+/* ------------------------Rabbit Legal Main -------------------------------------------------- */
+
+.legalpagelinks {
+    padding: 5%;
+}
+
+.legalpagelinks h1 {
+    margin-bottom: 40px;
+}
+
+.legalpagelinks .links1 h1 {
+    color: rgb(108, 221, 131);
+}
+
+
+.links2 h1 {
+    color: rgb(218, 218, 218);
+}
+
+.legalpagelinks .links1 a {
+    color: rgb(18, 19, 24);
+    /* color: rgb(218, 218, 218); */
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 11px;
+    cursor: pointer;
+    background-color: rgb(108, 221, 131);
+    /* background-color: black; */
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid rgb(108, 221, 131);
+    /* border: solid rgb(9, 255, 0); */
+    border-width: 1px;
+    margin: .5%;
+    white-space: nowrap;
+}
+
+.legalpagelinks .links1 a:hover {
+    color: rgb(231, 121, 184);
+    border: solid rgb(231, 121, 184);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(40, 42, 53);
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(40, 42, 53);
+    border-width: 1px;
+    margin: .5%;
+    text-decoration: none;
+    
+}
+
+
+/* ------------------------Rabbit Interact Main -------------------------------------------------- */
+
+.conman {
+    margin-top: 7%;
+    width: 95%;
+    margin-bottom: 40pt;
+}
+
+#interact .conman h1 {
+    color: rgb(231, 121, 184);
+    font-size: 3.5vw;
+    margin-bottom: 5%;
+
+}
+
+#interact .conman li {
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 575px) {
+    #interact .conman h1 {
+        color: rgb(231, 121, 184);
+        font-size: 27px;
+        margin-bottom: 5%;
+    }
+
+    #interact .conman li {
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
+    
+}
+
+.legalpagelinks {
+    padding: 5%;
+}
+
+.legalpagelinks h1 {
+    margin-bottom: 40px;
+}
+
+.interactpagelinks .links1 h1 {
+    color: rgb(231, 121, 184);
+}
+
+
+.links2 h1 {
+    color: rgb(218, 218, 218);
+}
+
+.interactpagelinks .links1 a {
+    color: rgb(18, 19, 24);
+    /* color: rgb(218, 218, 218); */
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 11px;
+    cursor: pointer;
+    background-color: rgb(231, 121, 184);
+    /* background-color: black; */
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid rgb(231, 121, 184);
+    /* border: solid rgb(9, 255, 0); */
+    border-width: 1px;
+    margin: .5%;
+    white-space: nowrap;
+}
+
+.interactpagelinks .links1 a:hover {
+    color: rgb(180, 157, 229);
+    border: solid rgb(180, 157, 229);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(40, 42, 53);
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(40, 42, 53);
+    border-width: 1px;
+    margin: .5%;
+    text-decoration: none;
+    
+}
+
+
+/* ------------------------------------- contact form ------------------------------------------------- */
+
+#contact .box {
+    background-color: rgb(108, 221, 131);
+    display: block;
+    height: 100%;
+    width: 33%;
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    
+}
+
+#contact .box::before {
+    border: 25vw solid transparent;
+    border-left: 12vw solid rgb(108, 221, 131);
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    border-right: 0;
+    top: o;
+    left: 99.5%;
+    z-index: 3;
+}
+
+.formdiv {
+    line-height: 1.6vw;
+}
+
+.formdiv label, .formdiv p {
+    font-size: 1.1vw;
+    margin-bottom: 1%;
+    color: whitesmoke;
+}
+
+.formdiv input {
+    width: 20vw;
+    height: 1.9vw; 
+    font-size: 1.1vw;
+    box-shadow: .2vw .2vw gray;
+}
+
+textarea {
+    font-size: 1.1vw;
+    box-shadow: .2vw .2vw gray;
+    width: 20vw;
+    line-height: 1;
+}
+
+
+input#checkbox {
+    width: 2vw;
+    height: 1.1vw;
+    box-shadow: none;  
+}
+
+select, option {
+    width: 20vw;
+    height: 1.9vw; 
+    font-size: 1.1vw;
+    box-shadow: .2vw .2vw gray;
+}
+
+.formdiv input.submit {
+    width: 7vw;
+    height: 2.1vw;  
+    font-size: 1vw;
+    text-align: center;
+}
+
+.formdiv form br {
+    font-size: .5vw;
+}
+
+/* ----------------------------------------------Footer -------------------------------------------------------- */
+
+.footer-break {
+    border: 2px solid white;
+    width: 95%;
+    text-align: center;
+}
+
+#footer {
+    max-width: 95%;
+  }
+  
+  .panel-footer {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.562);
+    
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: rgb(40, 42, 53);
+    font-size: 1.1em;
+  }
+  
+  #hours span{
+    font-size: 1.4em;
+    color: whitesmoke;
+  }
+
+  #address span {
+    font-size: 3vw;
+    color: whitesmoke;
+  }
+  
+  #comments {
+    font-style: italic;
+  }
+  
+  #comments p:nth-child(2) {
+    margin-top: 25px;
+  }
 
 
