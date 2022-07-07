@@ -9,22 +9,7 @@ body {
     background-color: rgb(40, 42, 53);
 }
 
-#main {
-    padding: 0%;
-    margin-top: 90px;
-}
-
-#legal {
-    padding: 0%;
-    margin-top: 90px;
-}
-
-#interact {
-    padding: 0%;
-    margin-top: 90px;
-}
-
-#contact {
+#main , #legal , #interact , #contact {
     padding: 0%;
     margin-top: 90px;
 }
@@ -141,14 +126,6 @@ a.nav-link {
 
 li.nav-item a.nav-link {
     padding-top: 0%;
-}
-
-
-.bottombutton {
-    border-color: black;
-    font-size: larger;
-    border: solid black;
-    padding: 0%;
 }
 
 
@@ -631,29 +608,28 @@ video {
 }
 
 .links1 h1 {
-    color: #b4abdf;
+    color: rgb(180, 157, 229);
+    font-size: 2vw;
 }
 
 
 .links2 h1 {
     color: rgb(218, 218, 218);
+    font-size: 2vw;
 }
 
 .links1 a {
     color: rgb(18, 19, 24);
-    /* color: rgb(218, 218, 218); */
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: bold;
-    border-radius: 11px;
+    border-radius: 1vw;
     cursor: pointer;
-    background-color: #b4abdf;
-    /* background-color: black; */
+    background-color: rgb(180, 157, 229);
     padding-top: 0%;
     padding-bottom: 0%;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: solid #b4abdf;
-    /* border: solid rgb(9, 255, 0); */
+    padding-left: .5%;
+    padding-right: .5%;
+    border: solid rgb(180, 157, 229);
     border-width: 1px;
     margin: .5%;
     white-space: nowrap;
@@ -662,61 +638,40 @@ video {
 .links1 a:hover {
     color: rgb(9, 255, 0);
     border: solid rgb(9, 255, 0);
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 20px;
     cursor: pointer;
     background-color: rgb(40, 42, 53);
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: rgb(40, 42, 53);
     border-width: 1px;
-    margin: .5%;
     text-decoration: none;
     
 }
 
 .links2 a {
     color: rgb(218, 218, 218);
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: bold;
-    border-radius: 11px;
+    border-radius: 1vw;
     cursor: pointer;
     background-color: rgb(40, 42, 53);
-    /* background-color: black; */
     padding-top: 0%;
     padding-bottom: 0%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: .5%;
+    padding-right: .5%;
     border: solid rgb(218, 218, 218);
-    /* border: solid rgb(110, 75, 121); */
     border-width: 1px;
     margin: .5%;
     white-space: nowrap;
 }
 
 .links2 a:hover {
-    color: #2a2831;
-    /* color: rgb(195, 0, 255); */
-    font-weight: bold;
-    border-radius: 20px;
+    color: rgb(40, 42, 53);
     cursor: pointer;
     background-color: rgb(218, 218, 218);
-    /* background-color: #2a2831; */
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 5px;
-    padding-right: 5px;
     border: solid rgb(218, 218, 218);
-    /* border: solid rgb(195, 0, 255); */
     border-width: 1px;
-    margin: .5%;
     text-decoration: none;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 700px) {
     .links1 {
         align-items: center;
         text-align: center;
@@ -1157,9 +1112,10 @@ select, option {
 /* ----------------------------------------------Footer -------------------------------------------------------- */
 
 .footer-break {
-    border: 2px solid white;
+    border: .0005vw solid white;
     width: 95%;
     text-align: center;
+    margin-top: 2%;
 }
 
 #footer {
@@ -1168,22 +1124,19 @@ select, option {
   
   .panel-footer {
     margin-top: 20px;
-    color: rgba(255, 255, 255, 0.562);
-    
+    color: rgba(255, 255, 255, 0.562); 
     padding-bottom: 30px;
     padding-top: 30px;
     background-color: rgb(40, 42, 53);
-    font-size: 1.1em;
+    font-size: .8vw;
   }
-  
-  #hours span{
-    font-size: 1.4em;
+
+  .panel-footer span {
     color: whitesmoke;
   }
 
   #address span {
     font-size: 3vw;
-    color: whitesmoke;
   }
   
   #comments {
@@ -1194,4 +1147,15 @@ select, option {
     margin-top: 25px;
   }
 
+  @media screen and (max-width: 575px) {
+   
+    .panel-footer {
+        font-size: 20px;
+      }
 
+      #address span {
+        font-size: 40px;
+      }
+
+
+  }
