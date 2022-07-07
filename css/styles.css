@@ -966,7 +966,10 @@ video {
 .conman {
     margin-top: 7%;
     width: 95%;
-    margin-bottom: 40pt;
+    border: .2vw solid rgb(231, 121, 184);
+    padding: 2vw;
+    padding-top: 1.3vw;
+    padding-bottom: 1.3vw;
 }
 
 #interact .conman h1 {
@@ -977,7 +980,15 @@ video {
 }
 
 #interact .conman li {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
+    padding-left: 0;
+}
+
+#interact > p {
+    font-size: 1vw;
+    margin-top: 1%;
+    text-align: center;
+    color: whitesmoke;
 }
 
 @media screen and (max-width: 575px) {
@@ -989,7 +1000,11 @@ video {
 
     #interact .conman li {
         font-size: 18px;
-        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    #interact > p {
+        font-size: 12px;
     }
     
 }
