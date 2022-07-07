@@ -67,3 +67,11 @@ $(".interact").hover(function () {
 }
 );
 
+// const video = document.querySelector('video');
+
+// video.addEventListener('ended', function(e) { 
+//   this.currentTime = 7;
+// }, false
+// );
+
+

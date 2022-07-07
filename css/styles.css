@@ -15,6 +15,7 @@ body {
 }
 
 
+
 /* ----------------Navbar------------------------------------------------------------------------------------ */
 
 html header .navbar {
@@ -149,8 +150,29 @@ video {
     margin-bottom: -7%;
 }
 
+#legal video , #interact video , #contact video {
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+}
+
 .vidbox {
     padding: 0;
+}
+
+img {
+    bottom: 0;
+    right: 0;
+    display: block;
+    margin-bottom: -9%;
+    margin-left: -13vw;
+}
+
+#imgoutsourcing {
+    margin-bottom: -17vw;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
 }
 
 .jumbo span {
