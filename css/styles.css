@@ -583,7 +583,6 @@ video {
     position: relative;
     margin-top: 60pt;
     width: 95%;
-    margin-bottom: 40pt;
 }
 
 
@@ -599,37 +598,38 @@ video {
     color: #b4abdf;
 }
 
+
 .mainpagelinks {
-    padding: 5%;
+    padding: 3%;
+    padding-bottom: 0;
 }
 
-.mainpagelinks h1 {
-    margin-bottom: 40px;
-}
 
 .links1 h1 {
     color: rgb(180, 157, 229);
-    font-size: 2vw;
+    font-size: 2.2vw;
+    margin-bottom: 2%;
 }
 
 
 .links2 h1 {
     color: rgb(218, 218, 218);
-    font-size: 2vw;
+    font-size: 2.2vw;
+    margin-bottom: 2%;
 }
 
 .links1 a {
     color: rgb(18, 19, 24);
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-weight: bold;
-    border-radius: 1vw;
+    border-radius: 15vw;
     cursor: pointer;
     background-color: rgb(180, 157, 229);
+    border: solid rgb(218, 218, 218);
     padding-top: 0%;
     padding-bottom: 0%;
-    padding-left: .5%;
-    padding-right: .5%;
-    border: solid rgb(180, 157, 229);
+    padding-left: 2%;
+    padding-right: 2%;
     border-width: 1px;
     margin: .5%;
     white-space: nowrap;
@@ -647,15 +647,15 @@ video {
 
 .links2 a {
     color: rgb(218, 218, 218);
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-weight: bold;
     border-radius: 1vw;
     cursor: pointer;
     background-color: rgb(40, 42, 53);
     padding-top: 0%;
     padding-bottom: 0%;
-    padding-left: .5%;
-    padding-right: .5%;
+    padding-left: 2%;
+    padding-right: 2%;
     border: solid rgb(218, 218, 218);
     border-width: 1px;
     margin: .5%;
@@ -671,16 +671,42 @@ video {
     text-decoration: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .links1 {
         align-items: center;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        line-height: 2;
+        margin-top: 50px;
     }
 
     .links2 {
         align-items: center;
         text-align: center;
+        margin-bottom: 30px;
+        line-height: 2;
+    }
+
+    .links1 a {
+        font-size: 20px;
+        border-radius: 15vw;
+    }
+
+    .links2 a {
+        font-size: 20px;
+        border-radius: 15vw;
+
+    }
+
+    .links1 h1 {
+        font-size: 35px;
+        margin-bottom: 3%;
+    }
+    
+    
+    .links2 h1 {
+        font-size: 7vw;
+        margin-bottom: 3%;
     }
 }
 
@@ -726,7 +752,7 @@ video {
 #cube {
     margin-top: 150px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 3vw;
 }
 
 @media screen and (max-width: 524px) {
@@ -887,19 +913,12 @@ video {
 
 .legalpagelinks {
     padding: 5%;
+    padding-bottom: 0;
 }
 
-.legalpagelinks h1 {
-    margin-bottom: 40px;
-}
 
 .legalpagelinks .links1 h1 {
     color: rgb(108, 221, 131);
-}
-
-
-.links2 h1 {
-    color: rgb(218, 218, 218);
 }
 
 .legalpagelinks .links1 a {
@@ -975,12 +994,9 @@ video {
     
 }
 
-.legalpagelinks {
-    padding: 5%;
-}
-
-.legalpagelinks h1 {
-    margin-bottom: 40px;
+.interactpagelinks {
+    padding: 3%;
+    padding-bottom: 0;
 }
 
 .interactpagelinks .links1 h1 {
@@ -1112,7 +1128,7 @@ select, option {
 /* ----------------------------------------------Footer -------------------------------------------------------- */
 
 .footer-break {
-    border: .0005vw solid white;
+    background-color: whitesmoke;
     width: 95%;
     text-align: center;
     margin-top: 2%;
@@ -1123,10 +1139,10 @@ select, option {
   }
   
   .panel-footer {
-    margin-top: 20px;
+    margin-top: .5vw;
     color: rgba(255, 255, 255, 0.562); 
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 1%;
     background-color: rgb(40, 42, 53);
     font-size: .8vw;
   }
@@ -1137,14 +1153,6 @@ select, option {
 
   #address span {
     font-size: 3vw;
-  }
-  
-  #comments {
-    font-style: italic;
-  }
-  
-  #comments p:nth-child(2) {
-    margin-top: 25px;
   }
 
   @media screen and (max-width: 575px) {
