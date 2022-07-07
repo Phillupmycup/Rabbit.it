@@ -875,6 +875,38 @@ video {
 
 /* ----------------------------------------------Rabbit IT support ------------------------------------------ */
 
+.box2 .supportlinks {
+    margin-top: 7%;
+    width: 100%;
+}
+
+
+.box2 .supportlinks a:hover {
+    text-decoration: none;
+    border: .3vw dotted rgb(108, 221, 131);
+}
+
+.box2 .supportlinks a:hover h4 , .supportlinks a:hover div {
+    color: rgb(108, 221, 131);
+}
+
+
+
+.box2 .supportlinks h4 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1vw;
+    line-height: 2.5;
+}
+
+
+.box2 .bi {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 7vw;
+    line-height: 1.1;
+}
+
 .supportlinks {
     margin-top: 7%;
     width: 90%;
@@ -895,18 +927,33 @@ video {
 .supportlinks h4 {
     color: rgb(180, 157, 229);
     text-align: center;
-    font-size: 1.9vw;
+    font-size: 2vw;
     line-height: 2.5;
 }
 
 .emaillink, .phonelink, .downloadlink {
     border: .3vw solid rgb(180, 157, 229);
+    padding: 0;
 }
 
 .bi {
     color: whitesmoke;
     text-align: center;
     font-size: 7vw;
+}
+
+@media screen and (max-width: 575px) {
+     
+    .supportlinks h4 {
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+
+    .bi {
+        margin-top: 2%;
+    }
+
+    
 }
 
 /* ------------------------Rabbit Legal Main -------------------------------------------------- */
@@ -966,7 +1013,7 @@ video {
 .conman {
     margin-top: 7%;
     width: 95%;
-    border: .2vw solid rgb(231, 121, 184);
+    border: .2vw solid rgba(245, 245, 245, 0.658);
     padding: 2vw;
     padding-top: 1.3vw;
     padding-bottom: 1.3vw;
@@ -1143,7 +1190,7 @@ select, option {
 /* ----------------------------------------------Footer -------------------------------------------------------- */
 
 .footer-break {
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.685);
     width: 95%;
     text-align: center;
     margin-top: 2%;
