@@ -305,10 +305,13 @@ video {
 
     .mobilepara {
         color: whitesmoke;
-        font-size: 4vw;
+        font-size: 5vw;
         margin-top: 5%;
         margin-bottom: 9%;
         width: 95%;
+        border: .5vw solid rgb(180, 157, 229);
+        padding-top: 3vw;
+        padding-bottom: 3vw;
     }
 }
     
@@ -389,9 +392,6 @@ video {
 }
 
 @media screen and (max-width: 412px) {
-    #main .imcurious {
-        font-size: 7.8vw;
-    }
 
     #main .outbody .imcurious {
         font-size: 6vw;
