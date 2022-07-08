@@ -141,13 +141,14 @@ li.nav-item a.nav-link {
     position: relative;
     overflow: hidden;
     z-index: 0;
+    display: block;
 }
 
 video {
     bottom: 0;
     right: 0;
     display: block;
-    margin-bottom: -7%;
+    margin-bottom: -8%;
 }
 
 #legal video , #interact video , #contact video {
@@ -156,27 +157,24 @@ video {
     -moz-transform:rotateY(180deg);
 }
 
-.vidbox {
-    padding: 0;
-}
-
-img {
-    bottom: 0;
-    right: 0;
-    display: block;
-    margin-bottom: -9%;
-    margin-left: -13vw;
+#imgcon {
+    margin-bottom: -7%;
+    margin-left: -10%;
+    width: 100%;
 }
 
 #imgoutsourcing {
-    margin-bottom: -17vw;
-    transform: rotateY(180deg);
-    -webkit-transform:rotateY(180deg);
-    -moz-transform:rotateY(180deg);
+    margin-bottom: -7%;
+    margin-left: -2%;
+}
+
+#imgsupport {
+    margin-left: -13%;
+    margin-bottom: -5%;
 }
 
 .jumbo span {
-    color: rgb(195, 0, 255);;
+    color: rgb(195, 0, 255);
     font-size: 3vw;
     text-shadow: .15vw .15vw black;
 }
@@ -265,6 +263,53 @@ img {
     top: 0;
     right: 99.5%;
     z-index: 2;
+}
+
+@media screen and (max-width: 575px) {
+
+
+
+    #imgcon {
+    height: 85vh;
+    margin-left: -250px;
+    display: block;
+    width: auto;
+    margin-bottom: 0;
+    }
+
+    .jumbo .vidtext2 {
+        position: absolute;
+        top: 30%;
+        z-index: 3;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.363);
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 1%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .vidtext2 h2 span {
+        font-size:14vw;
+        color: whitesmoke;
+        text-shadow: .7vw .7vw rgb(180, 157, 229);
+    }
+
+    .jumbo .vidtext2 h2 {
+        font-size: 6vw;
+        color: whitesmoke;
+    }
+
+    .mobilepara {
+        color: whitesmoke;
+        font-size: 4vw;
+        margin-top: 5%;
+        margin-bottom: 9%;
+        width: 95%;
+    }
 }
     
 .vidtext2 {
@@ -760,7 +805,7 @@ img {
     margin-top: 20%;
 }
 
-@media screen and (min-width: 525px) {
+@media screen and (min-width: 576px) {
     .circle-container {
         position: absolute;
         text-align: center;
@@ -777,11 +822,10 @@ img {
     margin-bottom: 3vw;
 }
 
-@media screen and (max-width: 524px) {
+@media screen and (max-width: 575px) {
     .circle-container {
         text-align: center;
-        top: -100px;
-        z-index: 4;
+        margin-bottom: 5%;
     }
 
     #cube {
@@ -1251,3 +1295,5 @@ select, option {
 
 
   }
+
+  /* ----------------------------------------end-------------------------------------------------------- */
