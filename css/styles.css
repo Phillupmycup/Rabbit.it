@@ -78,7 +78,7 @@ header .navbar .navbarNav {
 
 .collapse .dropdown-item {
     color: #e1e2de;
-    padding-left: 0.5rem;
+    padding-left: 0
 }
 
 
@@ -145,10 +145,8 @@ li.nav-item a.nav-link {
 }
 
 video {
-    bottom: 0;
-    right: 0;
-    display: block;
     margin-bottom: -8%;
+    width: 100%;
 }
 
 #legal video , #interact video , #contact video {
@@ -158,25 +156,21 @@ video {
 }
 
 #imgcon {
-    margin-bottom: -7%;
+    margin-bottom: -8%;
     margin-left: -10%;
     width: 100%;
 }
 
 #imgoutsourcing {
-    margin-bottom: -7%;
+    margin-bottom: -8%;
     margin-left: -2%;
+    width: 100%;
 }
 
 #imgsupport {
     margin-left: -13%;
-    margin-bottom: -5%;
-}
-
-.jumbo span {
-    color: rgb(195, 0, 255);
-    font-size: 3vw;
-    text-shadow: .15vw .15vw black;
+    margin-bottom: -5.8%;
+    width: 100%;
 }
 
 .box {
@@ -205,36 +199,41 @@ video {
     z-index: 3;
 }
 
-.jumbo p {
-    line-height: 1;
-    margin-bottom: 5%;
-}
-
 .jumbo h2 {
-    line-height: 1;
+    font-size: 5.7vw;
+    color: rgb(40, 42, 53);
 }
 
-.jumbo h2 span {
-    line-height: 1.5;
+.jumbo h3 {
+    line-height: 1;
+    font-size: 2.5vw;
+    color: rgb(40, 42, 53);
 }
     
 .vidtext {
     position: absolute;
-    width: 100%;
-    top: 8%;
+    width: 125%;
+    top: 40%;
     left: 3%;
+    z-index: 4;
+    text-align: left;
+}
+
+.para-container {
+    position: absolute;
+    text-align: center;
+    bottom: -9.5vw;
+    left: 45%;
     z-index: 4;
 }
 
-.vidtext h2 {
-    font-size: 3vw;
-    color: rgb(40, 42, 53);
-}
-
-.vidtext p {
-    font-size: 1.7vw;
-    color: rgb(40, 42, 53);
-    margin-bottom: 2%;
+.para {
+    width: 2vw;
+    height: 11vw;
+    margin: .8vw;
+    transform: skew(20deg);
+    background-color: rgb(108, 221, 131);
+    display: inline-block;
 }
 
 
@@ -257,114 +256,159 @@ video {
     display: block;
     height: 0;
     width: 0;
-
     border-left: 0;
-
     top: 0;
     right: 99.5%;
     z-index: 2;
 }
 
+
+    
+.vidtext2 {
+    position: absolute;
+    width: 120%;
+    top: 40%;
+    right: 3%;
+    z-index: 4;
+    text-align: right;
+}
+
+.bodyhead {
+    color: whitesmoke;
+    font-size: 5vw;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    width: 95%;
+    border: .5vw solid rgb(180, 157, 229);
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.bodyhead h2 {
+    font-size: 3.2vw;
+    padding: 3%;
+    text-align: center;
+}
+
+.bodyhead p {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.bodyhead ul {
+    margin-left: 0;
+    margin-bottom: 5%;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 3vw;
+}
+
+.bodyhead li {
+    font-size: 1.7vw;
+    margin-bottom: 2vw;
+    line-height: 1.2;
+}
+
+
 @media screen and (max-width: 575px) {
 
 
-
     #imgcon {
-    height: 85vh;
-    margin-left: -250px;
-    display: block;
-    width: auto;
-    margin-bottom: 0;
+        height: 85vh;
+        margin-left: -250px;
+        display: block;
+        width: auto;
+        margin-bottom: 0;
     }
 
-    .jumbo .vidtext2 {
+    
+    #imgoutsourcing {
+        height: 85vh;
+        margin-left: -250px;
+        display: block;
+        width: auto;
+        margin-bottom: 0;
+        background-color: rgb(180, 157, 229);
+    }
+
+    #imgsupport {
+        height: 85vh;
+        margin-left: -250px;
+        display: block;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .jumbo .vidtext2mob {
         position: absolute;
-        top: 30%;
+        bottom: 0;
         z-index: 3;
         left: 0;
         width: 100%;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.363);
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
+        background-color: rgb(180, 157, 229);
+        border-top: 2px solid rgb(180, 157, 229);
+        border-bottom: 2px solid rgb(180, 157, 229);
         padding: 1%;
-        padding-top: 20%;
-        padding-bottom: 20%;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
 
-    .vidtext2 h2 span {
-        font-size:14vw;
-        color: whitesmoke;
-        text-shadow: .7vw .7vw rgb(180, 157, 229);
+    .vidtext2mob h2 {
+        font-size:12vw;
     }
 
-    .jumbo .vidtext2 h2 {
+    .vidtext2mob h3 {
         font-size: 6vw;
-        color: whitesmoke;
     }
 
-    .mobilepara {
-        color: whitesmoke;
+
+    .bodyhead h2 {
         font-size: 5vw;
-        margin-top: 5%;
-        margin-bottom: 9%;
-        width: 95%;
-        border: .5vw solid rgb(180, 157, 229);
-        padding-top: 3vw;
-        padding-bottom: 3vw;
+        padding: 3%;
+        text-align: center;
     }
-}
     
-.vidtext2 {
-    position: absolute;
+    .bodyhead p {
+        font-size: 2.7vw;
+        text-align: center;
+    }
+
+}
+
+.box2 .supportlinks {
     width: 100%;
-    top: 19%;
-    right: 3%;
+    position: absolute;
+    bottom: 7%;
+    right: 2%;
     z-index: 4;
-    text-align: right;
 }
 
-.vidtext2 h2 {
-    font-size: 2.5vw;
+
+.box2 .supportlinks a:hover {
+    text-decoration: none;
+    border: .3vw dotted rgb(108, 221, 131);
 }
 
-.vidtext2 p {
-    font-size: 1.6vw;
-    margin-bottom: 2%;
+.box2 .supportlinks a:hover h4 , .supportlinks a:hover div {
+    color: rgb(108, 221, 131);
 }
 
-.vidtext3 {
-    position: absolute;
-    width: 100%;
-    top: 13%;
-    right: 3%;
-    z-index: 2;
-    text-align: right;
+
+
+.box2 .supportlinks h4 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1vw;
+    line-height: 2.5;
 }
 
-.vidtext3 h2 {
-    font-size: 2.5vw;
-}
 
-.vidtext3 p {
-    font-size: 1.7vw;
-}
-
-.vidtext4 {
-    position: absolute;
-    width: 100%;
-    top: 20%;
-    right: 3%;
-    z-index: 4;
-    text-align: right;
-}
-
-.vidtext4 h2 {
-    font-size: 2.5vw;
-}
-
-.vidtext4 p {
-    font-size: 1.6vw;
+.box2 .bi {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 7vw;
+    line-height: 1.1;
 }
 
 #main .imcurious {
@@ -372,8 +416,9 @@ video {
 }
 
 #main .imcurious a {
-    color: #2a2831;
+    color: rgb(40, 42, 53);
     background-color: rgb(180, 157, 229);
+    border: 1px solid whitesmoke;
     border-radius: 35px;
     padding-left: 5%;
     padding-right: 5%;
@@ -385,9 +430,9 @@ video {
 #main .imcurious a:hover {
     cursor: pointer;
     background-color: rgb(40, 42, 53);
-    border: solid rgb(9, 255, 0);
+    border: solid rgb(108, 221, 131);
     border-width: 1px;
-    color: rgb(9, 255, 0) !important;
+    color: rgb(108, 221, 131) !important;
     
 }
 
@@ -418,9 +463,6 @@ video {
 
 /* --------------------------------jumbotron for legal ------------------------------------------------------ */
 
-#legal .jumbo span {
-    color: rgb(72, 156, 89);
-}
 
 #legal .box {
     background-color: rgb(108, 221, 131);
@@ -448,37 +490,6 @@ video {
     z-index: 3;
 }
 
-.jumbo p {
-    line-height: 1;
-    margin-bottom: 5%;
-}
-
-.jumbo h2 {
-    line-height: 1;
-}
-
-.jumbo h2 span {
-    line-height: 1.5;
-}
-    
-.vidtext {
-    position: absolute;
-    width: 100%;
-    top: 8%;
-    left: 3%;
-    z-index: 4;
-}
-
-.vidtext h2 {
-    font-size: 3vw;
-    color: rgb(40, 42, 53);
-}
-
-.vidtext p {
-    font-size: 1.7vw;
-    color: rgb(40, 42, 53);
-    margin-bottom: 2%;
-}
 
 #legal .imcurious {
     text-align: center;
@@ -531,10 +542,6 @@ video {
 /* --------------------------------jumbotron for Interact ------------------------------------------------------ */
 
 
-#interact .jumbo span {
-    color: rgb(196, 50, 132);
-}
-
 #interact .box {
     background-color: rgb(231, 121, 184);
     display: block;
@@ -561,19 +568,6 @@ video {
     z-index: 3;
 }
 
-#interact .box h2 {
-    margin-bottom: 0%;
-}
-
-#interact .box ul {
-    margin-left: 0;
-    padding-left: 8%;
-    margin-bottom: 5%;
-}
-#interact .box li {
-    font-size: 1.1vw;
-}
-
 @media screen and (max-width: 575px) {
     
 }
@@ -596,9 +590,9 @@ video {
 #interact .imcurious a:hover {
     cursor: pointer;
     background-color: rgb(40, 42, 53);
-    border: solid rgb(9, 255, 0);
+    border: solid rgb(108, 221, 131);
     border-width: 1px;
-    color: rgb(9, 255, 0) !important;
+    color: rgb(108, 221, 131) !important;
     
 }
 
@@ -628,26 +622,7 @@ video {
 /* ------------Rabbit IT Main------------------------------------------------------------------------- */
 
 
-.para-container {
-    position: absolute;
-    text-align: center;
-    top: -200px;
-    left: 50%;
-    z-index: 4;
-}
-
-.para {
-    width: 36px;
-    height: 180px;
-    margin: 17px;
-    transform: skew(20deg);
-    background-color: rgb(108, 221, 131);
-    display: inline-block;
-}
-
-
 #fund {
-    position: relative;
     margin-top: 60pt;
     width: 95%;
 }
@@ -686,13 +661,13 @@ video {
 }
 
 .links1 a {
-    color: rgb(18, 19, 24);
+    color: rgb(40, 42, 53);
     font-size: 1.1vw;
     font-weight: bold;
     border-radius: 15vw;
     cursor: pointer;
     background-color: rgb(180, 157, 229);
-    border: solid rgb(218, 218, 218);
+    border: solid whitesmoke;
     padding-top: 0%;
     padding-bottom: 0%;
     padding-left: 2%;
@@ -703,8 +678,8 @@ video {
 }
 
 .links1 a:hover {
-    color: rgb(9, 255, 0);
-    border: solid rgb(9, 255, 0);
+    color: rgb(108, 221, 131);
+    border: solid rgb(108, 221, 131);
     cursor: pointer;
     background-color: rgb(40, 42, 53);
     border-width: 1px;
@@ -713,7 +688,7 @@ video {
 }
 
 .links2 a {
-    color: rgb(218, 218, 218);
+    color: whitesmoke;
     font-size: 1.1vw;
     font-weight: bold;
     border-radius: 1vw;
@@ -723,7 +698,7 @@ video {
     padding-bottom: 0%;
     padding-left: 2%;
     padding-right: 2%;
-    border: solid rgb(218, 218, 218);
+    border: solid whitesmoke;
     border-width: 1px;
     margin: .5%;
     white-space: nowrap;
@@ -732,8 +707,8 @@ video {
 .links2 a:hover {
     color: rgb(40, 42, 53);
     cursor: pointer;
-    background-color: rgb(218, 218, 218);
-    border: solid rgb(218, 218, 218);
+    background-color: whitesmoke;
+    border: solid whitesmoke;
     border-width: 1px;
     text-decoration: none;
 }
@@ -784,15 +759,12 @@ video {
 
 .circle-container {
     text-align: center;
-    top: -250px;
-    left: 15%;
-    z-index: 4;
 }
 
 .circle {
     height: 200px;
     width: 200px;
-    background-color: rgb(9, 255, 0);
+    background-color: rgb(108, 221, 131);
     border-radius: 50%;
     display: inline-block;
 }
@@ -807,17 +779,13 @@ video {
 
 @media screen and (min-width: 576px) {
     .circle-container {
-        position: absolute;
         text-align: center;
-        top: -230px;
-        left: 15%;
-        z-index: 4;
     }
 }
 
 
 #cube {
-    margin-top: 150px;
+    margin-top: 10px;
     position: relative;
     margin-bottom: 3vw;
 }
@@ -941,56 +909,25 @@ video {
 
 /* ----------------------------------------------Rabbit IT support ------------------------------------------ */
 
-.box2 .supportlinks {
-    margin-top: 7%;
-    width: 100%;
-}
 
-
-.box2 .supportlinks a:hover {
-    text-decoration: none;
-    border: .3vw dotted rgb(108, 221, 131);
-}
-
-.box2 .supportlinks a:hover h4 , .supportlinks a:hover div {
-    color: rgb(108, 221, 131);
-}
-
-
-
-.box2 .supportlinks h4 {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 1vw;
-    line-height: 2.5;
-}
-
-
-.box2 .bi {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 7vw;
-    line-height: 1.1;
-}
-
-.supportlinks {
+.supportlinksbody {
     margin-top: 7%;
     width: 90%;
 }
 
 
-.supportlinks a:hover {
+.supportlinksbody a:hover {
     text-decoration: none;
     border: .3vw dotted rgb(108, 221, 131);
 }
 
-.supportlinks a:hover h4 , .supportlinks a:hover div {
+.supportlinksbody a:hover h4 , .supportlinks a:hover div {
     color: rgb(108, 221, 131);
 }
 
 
 
-.supportlinks h4 {
+.supportlinksbody h4 {
     color: rgb(180, 157, 229);
     text-align: center;
     font-size: 2vw;
@@ -1010,7 +947,7 @@ video {
 
 @media screen and (max-width: 575px) {
      
-    .supportlinks h4 {
+    .supportlinksbody h4 {
         font-size: 5vw;
         margin-bottom: 0;
     }
