@@ -33,7 +33,7 @@ header .navbar .navbarNav {
     padding-right: 20pt;
 }
  .navbar-dark .navbar-nav .nav-link {
-     color: rgb(218, 218, 218);
+     color: whitesmoke;
      margin-top: 10pt;
      padding-left: 0;
 }
@@ -77,7 +77,7 @@ header .navbar .navbarNav {
 
 
 .collapse .dropdown-item {
-    color: #e1e2de;
+    color: whitesmoke;
     padding-left: 0
 }
 
@@ -113,8 +113,8 @@ header .navbar .navbarNav {
 
     .navbar-dark .navbar-nav #kontakt:hover {
         background-color: rgb(108, 221, 131);
-        color: #2a2831;
-        border-color: #2a2831;
+        color: rgb(40, 42, 53);
+        border-color: rgb(40, 42, 53);
     }
 }
 
@@ -132,7 +132,7 @@ li.nav-item a.nav-link {
 
 
 
-/*------------------Jumbotron for IT-------------------------------------------------------------------------*/
+/*------------------Jumbotron--and---bodyhead--------------------------------------------------------------------*/
 
 
 .jumbo {
@@ -145,35 +145,42 @@ li.nav-item a.nav-link {
 }
 
 video {
-    margin-bottom: -8%;
+    margin-bottom: -9.2%;
     width: 100%;
 }
 
-#legal video , #interact video , #contact video {
+#legal video {
+    margin-left: 30%;
+}
+
+#interact video {
+    margin-left: 20%;
+}
+
+#interact video , #contact video {
     transform: rotateY(180deg);
     -webkit-transform:rotateY(180deg);
     -moz-transform:rotateY(180deg);
 }
 
 #imgcon {
-    margin-bottom: -8%;
+    margin-bottom: -9%;
     margin-left: -10%;
     width: 100%;
 }
 
-#imgoutsourcing {
-    margin-bottom: -8%;
-    margin-left: -2%;
+#imgout {
+    margin-bottom: -18%;
     width: 100%;
 }
 
 #imgsupport {
     margin-left: -13%;
-    margin-bottom: -5.8%;
+    margin-bottom: -9%;
     width: 100%;
 }
 
-.box {
+#main .box {
     background-color: rgb(180, 157, 229);
     display: block;
     height: 100%;
@@ -185,9 +192,60 @@ video {
     
 }
 
-.box::before {
+#main .box::before {
     border: 25vw solid transparent;
     border-left: 12vw solid rgb(180, 157, 229);
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    border-right: 0;
+    top: o;
+    left: 99.5%;
+    z-index: 3;
+}
+
+#legal .box {
+    background-color: rgb(108, 221, 131);
+    display: block;
+    height: 100%;
+    width: 33%;
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    
+}
+
+#legal .box::before {
+    border: 25vw solid transparent;
+    border-left: 12vw solid rgb(108, 221, 131);
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    border-right: 0;
+    top: o;
+    left: 99.5%;
+    z-index: 3;
+}
+
+#interact .box {
+    background-color: rgb(231, 121, 184);
+    display: block;
+    height: 100%;
+    width: 33%;
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+#interact .box::before {
+    border: 25vw solid transparent;
+    border-left: 12vw solid rgb(231, 121, 184);
     content: "";
     position: absolute;
     display: block;
@@ -219,23 +277,6 @@ video {
     text-align: left;
 }
 
-.para-container {
-    position: absolute;
-    text-align: center;
-    bottom: -9.5vw;
-    left: 45%;
-    z-index: 4;
-}
-
-.para {
-    width: 2vw;
-    height: 11vw;
-    margin: .8vw;
-    transform: skew(20deg);
-    background-color: rgb(108, 221, 131);
-    display: inline-block;
-}
-
 
 .box2 {
     background-color: rgb(180, 157, 229);
@@ -262,8 +303,39 @@ video {
     z-index: 2;
 }
 
+.box2 .supportlinks {
+    width: 100%;
+    position: absolute;
+    bottom: 7%;
+    right: 2%;
+    z-index: 4;
+}
 
-    
+.box2 .supportlinks a:hover {
+    text-decoration: none;
+    border: .3vw dotted rgb(108, 221, 131);
+}
+
+.box2 .supportlinks a:hover h4 , .supportlinks a:hover div {
+    color: rgb(108, 221, 131);
+}
+
+
+.box2 .supportlinks h4 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1vw;
+    line-height: 2.5;
+}
+
+
+.box2 .bi {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 7vw;
+    line-height: 1.1;
+}
+
 .vidtext2 {
     position: absolute;
     width: 120%;
@@ -271,6 +343,31 @@ video {
     right: 3%;
     z-index: 4;
     text-align: right;
+}
+
+.para-container {
+    position: absolute;
+    text-align: center;
+    bottom: -9.5vw;
+    left: 45%;
+    z-index: 4;
+}
+
+.para {
+    width: 2vw;
+    height: 11vw;
+    margin: .8vw;
+    transform: skew(20deg);
+    background-color: rgb(108, 221, 131);
+    display: inline-block;
+}
+
+#legal .para {
+    background-color: rgb(231, 121, 184);
+}
+
+#interact .para {
+    background-color: rgb(180, 157, 229);
 }
 
 .bodyhead {
@@ -282,6 +379,18 @@ video {
     border: .5vw solid rgb(180, 157, 229);
     padding-top: 3vw;
     padding-bottom: 3vw;
+}
+
+#legal .bodyhead {
+    border-color: rgb(108, 221, 131);
+}
+
+#interact .bodyhead {
+    border-color: rgb(231, 121, 184);
+}
+
+.bodyhead span {
+    color: rgb(180, 157, 229);
 }
 
 .bodyhead h2 {
@@ -312,6 +421,30 @@ video {
 
 @media screen and (max-width: 575px) {
 
+    #main #vidit {
+        height: 85vh;
+        margin-left: -550px;
+        display: block;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    #legal #vidlegal {
+        height: 85vh;
+        margin-left: -350px;
+        display: block;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    #interact #vidint {
+        height: 85vh;
+        margin-left: -550px;
+        display: block;
+        width: auto;
+        margin-bottom: 0;
+    }
+
 
     #imgcon {
         height: 85vh;
@@ -322,7 +455,7 @@ video {
     }
 
     
-    #imgoutsourcing {
+    #imgout {
         height: 85vh;
         margin-left: -250px;
         display: block;
@@ -345,13 +478,20 @@ video {
         z-index: 3;
         left: 0;
         width: 100%;
+        height: 20%;
         text-align: center;
         background-color: rgb(180, 157, 229);
-        border-top: 2px solid rgb(180, 157, 229);
-        border-bottom: 2px solid rgb(180, 157, 229);
         padding: 1%;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 5%;
+        padding-bottom: 35%;
+    }
+
+    #legal .jumbo .vidtext2mob {
+        background-color: rgb(108, 221, 131);
+    }
+
+    #interact .jumbo .vidtext2mob {
+        background-color: rgb(231, 121, 184);
     }
 
     .vidtext2mob h2 {
@@ -376,39 +516,26 @@ video {
 
 }
 
-.box2 .supportlinks {
-    width: 100%;
-    position: absolute;
-    bottom: 7%;
-    right: 2%;
-    z-index: 4;
+
+/* ------------Rabbit IT Main------------------------------------------------------------------------- */
+
+
+#fund {
+    margin-top: 60pt;
+    width: 95%;
 }
 
 
-.box2 .supportlinks a:hover {
-    text-decoration: none;
-    border: .3vw dotted rgb(108, 221, 131);
+#fund h1 {
+    color: rgb(180, 157, 229);
 }
 
-.box2 .supportlinks a:hover h4 , .supportlinks a:hover div {
-    color: rgb(108, 221, 131);
+#fund section {
+    color: rgb(228, 228, 228);
 }
 
-
-
-.box2 .supportlinks h4 {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 1vw;
-    line-height: 2.5;
-}
-
-
-.box2 .bi {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 7vw;
-    line-height: 1.1;
+#fund li span {
+    color: rgb(180, 157, 229);
 }
 
 #main .imcurious {
@@ -430,9 +557,10 @@ video {
 #main .imcurious a:hover {
     cursor: pointer;
     background-color: rgb(40, 42, 53);
-    border: solid rgb(108, 221, 131);
+    border: solid rgb(180, 157, 229);
     border-width: 1px;
-    color: rgb(108, 221, 131) !important;
+    color: rgb(180, 157, 229) !important;
+    text-decoration: none;
     
 }
 
@@ -441,203 +569,6 @@ video {
     #main .outbody .imcurious {
         font-size: 6vw;
     }
-    
-}
-
-#main .box2 .imcurious a {
-    color: rgb(108, 221, 131);
-    background-color: rgb(40, 42, 53);
-    border: solid rgb(108, 221, 131);
-    border-width: 1px;
-}
-
-#main .box2 .imcurious {
-    z-index: 4;
-    margin-top: 2%;
-    padding-right: 0%;
-    font-size: 1.7vw;
-    text-align: right;
-}
-
-
-
-/* --------------------------------jumbotron for legal ------------------------------------------------------ */
-
-
-#legal .box {
-    background-color: rgb(108, 221, 131);
-    display: block;
-    height: 100%;
-    width: 33%;
-    z-index: 3;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    
-}
-
-#legal .box::before {
-    border: 25vw solid transparent;
-    border-left: 12vw solid rgb(108, 221, 131);
-    content: "";
-    position: absolute;
-    display: block;
-    height: 0;
-    width: 0;
-    border-right: 0;
-    top: o;
-    left: 99.5%;
-    z-index: 3;
-}
-
-
-#legal .imcurious {
-    text-align: center;
-}
-
-#legal .imcurious a {
-    color: #2a2831;
-    background-color: rgb(180, 157, 229);
-    border-radius: 35px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: .5%;
-    padding-top: .5%;
-    font-weight: 500;
-}
-
-#legal .imcurious a:hover {
-    cursor: pointer;
-    background-color: rgb(40, 42, 53);
-    border: solid rgb(9, 255, 0);
-    border-width: 1px;
-    color: rgb(9, 255, 0) !important;
-    
-}
-
-#legal .box .imcurious a {
-    color: rgb(231, 121, 184);
-    background-color: rgb(40, 42, 53);
-    border: solid rgb(231, 121, 184);
-    border-width: 1px;
-}
-
-#legal .box .imcurious a:hover {
-    cursor: pointer;
-    background-color: rgb(40, 42, 53);
-    border: solid rgb(243, 49, 159);
-    border-width: 1px;
-    color: rgb(243, 49, 159) !important;
-    
-}
-
-#legal .box .imcurious {
-    z-index: 4;
-    margin-top: 4%;
-    padding-left: 0%;
-    font-size: 1.7vw;
-    text-align: left;
-}
-
-/* --------------------------------jumbotron for Interact ------------------------------------------------------ */
-
-
-#interact .box {
-    background-color: rgb(231, 121, 184);
-    display: block;
-    height: 100%;
-    width: 33%;
-    z-index: 3;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    
-}
-
-#interact .box::before {
-    border: 25vw solid transparent;
-    border-left: 12vw solid rgb(231, 121, 184);
-    content: "";
-    position: absolute;
-    display: block;
-    height: 0;
-    width: 0;
-    border-right: 0;
-    top: o;
-    left: 99.5%;
-    z-index: 3;
-}
-
-@media screen and (max-width: 575px) {
-    
-}
-
-#interact .imcurious {
-    text-align: center;
-}
-
-#interact .imcurious a {
-    color: #2a2831;
-    background-color: rgb(180, 157, 229);
-    border-radius: 35px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: .5%;
-    padding-top: .5%;
-    font-weight: 500;
-}
-
-#interact .imcurious a:hover {
-    cursor: pointer;
-    background-color: rgb(40, 42, 53);
-    border: solid rgb(108, 221, 131);
-    border-width: 1px;
-    color: rgb(108, 221, 131) !important;
-    
-}
-
-#interact .box .imcurious a {
-    color: rgb(180, 157, 229);
-    background-color: rgb(40, 42, 53);
-    border: solid rgb(180, 157, 229);
-    border-width: 1px;
-}
-
-#interact .box .imcurious a:hover {
-    cursor: pointer;
-    background-color: rgb(40, 42, 53);
-    border: solid rgb(137, 95, 228);
-    border-width: 1px;
-    color: rgb(137, 95, 228) !important; 
-}
-
-#interact .box .imcurious {
-    z-index: 4;
-    margin-top: 2%;
-    padding-left: 0%;
-    font-size: 1.7vw;
-    text-align: left;
-}
-
-/* ------------Rabbit IT Main------------------------------------------------------------------------- */
-
-
-#fund {
-    margin-top: 60pt;
-    width: 95%;
-}
-
-
-#fund h1 {
-    color: rgb(180, 157, 229);
-}
-
-#fund section {
-    color: rgb(228, 228, 228);
-}
-
-#fund li span {
-    color: #b4abdf;
 }
 
 
@@ -683,8 +614,7 @@ video {
     cursor: pointer;
     background-color: rgb(40, 42, 53);
     border-width: 1px;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 .links2 a {
@@ -744,8 +674,7 @@ video {
         font-size: 35px;
         margin-bottom: 3%;
     }
-    
-    
+      
     .links2 h1 {
         font-size: 7vw;
         margin-bottom: 3%;
@@ -755,7 +684,6 @@ video {
 
 
 /* ------------rabbit it consulting--------------------------------------------------------------------------   */
-
 
 .circle-container {
     text-align: center;
@@ -777,36 +705,10 @@ video {
     margin-top: 20%;
 }
 
-@media screen and (min-width: 576px) {
-    .circle-container {
-        text-align: center;
-    }
-}
-
-
 #cube {
     margin-top: 10px;
     position: relative;
     margin-bottom: 3vw;
-}
-
-@media screen and (max-width: 575px) {
-    .circle-container {
-        text-align: center;
-        margin-bottom: 5%;
-    }
-
-    #cube {
-        margin-top: 20px;
-        position: relative;
-    }
-}
-
-@media screen and (max-width: 990px) {
-    #cube {
-        width: 95%;
-        
-    }
 }
 
 #cube section {
@@ -821,7 +723,10 @@ video {
     font-size: 20px;
 }
 
+
+
 /* --------------------------------------Rabbit it Outsourcing---------------------------------------------- */
+
 .outbody {
     margin-top: 40px;
     width: 95%;
@@ -915,7 +820,6 @@ video {
     width: 90%;
 }
 
-
 .supportlinksbody a:hover {
     text-decoration: none;
     border: .3vw dotted rgb(108, 221, 131);
@@ -924,8 +828,6 @@ video {
 .supportlinksbody a:hover h4 , .supportlinks a:hover div {
     color: rgb(108, 221, 131);
 }
-
-
 
 .supportlinksbody h4 {
     color: rgb(180, 157, 229);
@@ -961,6 +863,30 @@ video {
 
 /* ------------------------Rabbit Legal Main -------------------------------------------------- */
 
+#legal .imcurious {
+    text-align: center;
+}
+
+#legal .imcurious a {
+    color: #2a2831;
+    background-color: rgb(108, 221, 131);
+    border-radius: 35px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: .5%;
+    padding-top: .5%;
+    font-weight: 500;
+}
+
+#legal .imcurious a:hover {
+    cursor: pointer;
+    background-color: rgb(40, 42, 53);
+    border: solid rgb(108, 221, 131);
+    border-width: 1px;
+    color: rgb(108, 221, 131) !important;
+    text-decoration: none;  
+}
+
 .legalpagelinks {
     padding: 5%;
     padding-bottom: 0;
@@ -973,41 +899,18 @@ video {
 
 .legalpagelinks .links1 a {
     color: rgb(18, 19, 24);
-    /* color: rgb(218, 218, 218); */
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 11px;
-    cursor: pointer;
     background-color: rgb(108, 221, 131);
-    /* background-color: black; */
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 5px;
-    padding-right: 5px;
     border: solid rgb(108, 221, 131);
-    /* border: solid rgb(9, 255, 0); */
     border-width: 1px;
-    margin: .5%;
-    white-space: nowrap;
+    text-decoration: none;
 }
 
 .legalpagelinks .links1 a:hover {
     color: rgb(231, 121, 184);
     border: solid rgb(231, 121, 184);
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: rgb(40, 42, 53);
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: rgb(40, 42, 53);
+    background-color: rgb(40, 42, 53); 
     border-width: 1px;
-    margin: .5%;
     text-decoration: none;
-    
 }
 
 
@@ -1042,8 +945,8 @@ video {
 }
 
 @media screen and (max-width: 575px) {
+    
     #interact .conman h1 {
-        color: rgb(231, 121, 184);
         font-size: 27px;
         margin-bottom: 5%;
     }
@@ -1059,6 +962,30 @@ video {
     
 }
 
+#interact .imcurious {
+    text-align: center;
+}
+
+#interact .imcurious a {
+    color: #2a2831;
+    background-color: rgb(231, 121, 184);
+    border-radius: 35px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: .5%;
+    padding-top: .5%;
+    font-weight: 500;
+}
+
+#interact .imcurious a:hover {
+    cursor: pointer;
+    background-color: rgb(40, 42, 53);
+    border: solid rgb(231, 121, 184);
+    border-width: 1px;
+    color: rgb(231, 121, 184) !important;   
+    text-decoration: none;
+}
+
 .interactpagelinks {
     padding: 3%;
     padding-bottom: 0;
@@ -1068,48 +995,25 @@ video {
     color: rgb(231, 121, 184);
 }
 
-
 .links2 h1 {
     color: rgb(218, 218, 218);
 }
 
 .interactpagelinks .links1 a {
-    color: rgb(18, 19, 24);
-    /* color: rgb(218, 218, 218); */
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 11px;
+    color: rgb(40, 42, 53);
     cursor: pointer;
     background-color: rgb(231, 121, 184);
-    /* background-color: black; */
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 5px;
-    padding-right: 5px;
     border: solid rgb(231, 121, 184);
-    /* border: solid rgb(9, 255, 0); */
     border-width: 1px;
-    margin: .5%;
-    white-space: nowrap;
 }
 
 .interactpagelinks .links1 a:hover {
     color: rgb(180, 157, 229);
     border: solid rgb(180, 157, 229);
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 20px;
     cursor: pointer;
     background-color: rgb(40, 42, 53);
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: rgb(40, 42, 53);
     border-width: 1px;
-    margin: .5%;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 
@@ -1123,8 +1027,7 @@ video {
     z-index: 3;
     position: absolute;
     top: 0px;
-    left: 0;
-    
+    left: 0;   
 }
 
 #contact .box::before {
@@ -1141,54 +1044,111 @@ video {
     z-index: 3;
 }
 
-.formdiv {
-    line-height: 1.6vw;
+.contact {
+    height: 80vh;
 }
 
-.formdiv label, .formdiv p {
-    font-size: 1.1vw;
-    margin-bottom: 1%;
+
+
+
+
+.text-black {
+    color: rgb(40, 42, 53); }
+  
+  .content {
+    padding: 7rem 0; }
+  
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700; }
+  
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: whitesmoke; }
+  
+  .form-control {
+    border: none;
+    border: 1px solid whitesmoke;
+    border-radius: 4px; }
+    .form-control:active, .form-control:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: rgb(40, 42, 53); }
+  
+  .col-form-label {
+    color: rgb(40, 42, 53); }
+  
+  .btn, .form-control, .custom-select {
+    height: 50px; }
+  
+  .custom-select:active, .custom-select:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: rgb(40, 42, 53); }
+  
+  .heading {
+    color: #888;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+    font-weight: 400; }
+  
+  .btn {
     color: whitesmoke;
-}
+    border: none;
+    border-radius: 4px !important;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1) !important; }
+    .btn:hover {
+      color: whitesmoke; }
+    .btn:active, .btn:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  
+  .inbox {
+    padding: 40px;
+    border: .5vw solid rgb(40, 42, 53);
+    background: rgb(108, 221, 131);
+    -webkit-box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08); }
 
-.formdiv input {
-    width: 20vw;
-    height: 1.9vw; 
-    font-size: 1.1vw;
-    box-shadow: .2vw .2vw gray;
-}
-
-textarea {
-    font-size: 1.1vw;
-    box-shadow: .2vw .2vw gray;
-    width: 20vw;
-    line-height: 1;
-}
-
-
-input#checkbox {
-    width: 2vw;
-    height: 1.1vw;
-    box-shadow: none;  
-}
-
-select, option {
-    width: 20vw;
-    height: 1.9vw; 
-    font-size: 1.1vw;
-    box-shadow: .2vw .2vw gray;
-}
-
-.formdiv input.submit {
-    width: 7vw;
-    height: 2.1vw;  
-    font-size: 1vw;
+    .inbox h3 {
+      font-size: 14px;
+      margin-bottom: 30px;
+      text-align: center; }
+  
+  label.error {
+    font-size: 12px;
+    color: red; }
+  
+  #message {
+    resize: vertical; }
+  
+  #form-message-warning, #form-message-success {
+    display: none; }
+  
+  #form-message-warning {
+    color: #B90B0B; }
+  
+  #form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; }
+  
+  .submitting {
     text-align: center;
-}
-
-.formdiv form br {
-    font-size: .5vw;
-}
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(40, 42, 53); }
+  
 
 /* ----------------------------------------------Footer -------------------------------------------------------- */
 

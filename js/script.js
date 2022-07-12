@@ -67,11 +67,15 @@ $(".interact").hover(function () {
 }
 );
 
-// const video = document.querySelector('video');
+function checkForm(form) {
+  if(!form.terms.checked) {
+    alert("Please indicate that you accept the Terms and Conditions")
+    form.terms.focus();
+    return false;
+  }
+  return true;
+}
 
-// video.addEventListener('ended', function(e) { 
-//   this.currentTime = 7;
-// }, false
-// );
+
 
 

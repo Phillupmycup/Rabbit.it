@@ -83,52 +83,95 @@
           <video autoplay muted width="100%" src="images/contact.mp4#t=,10"></video>
         </div>  
         <div class="box">
-          <div class="vidtext">
-            
-            <h2><span style="font-size: 4vw;">Contact Us</span><br> </h2>
-            
-            <div class="formdiv">
-              <form method="post" action="php\contactform.php" >
-                <label for="name">Vorname/Name:</label><br>
-                <input type="text" name="name" autocapitalize="word">
-                <br>
-                
-                <label for="email" autocomplete="on" >Email:</label><br>
-                <input type="email" name="email">
-                <br>
-                
-                <label for="number" autocomplete="on">Telefon:</label><br>
-                <input type="tel" name="number">
-                <br>
-                
-                <label for="message">Nachricht:</label><br>
-                <textarea name="message" name="message" rows="5"></textarea>
-                <br>
-                <br>
-
-                <label for="howyouhear" style="color: whitesmoke;">Woher haben Sie von uns gehört?</label>
-                <select name="howyouhear">
-                  <option value=""></option>
-                  <option value="Empfehlung von Bekannten.">Empfehlung von Bekannten.</option>
-                  <option value="google">Google</option>
-                  <option value="forgot">Habe ich vergessen.</option>
-                  <option value="Sonstiges">Sonstiges</option>
-                </select>
-                <br>
-                <br>
-
-                <input id="checkbox" type="checkbox" name="updateme" value="yes">
-                <label for="update">Ich möchte beim Launch von rabbit legal informiert werden.</label>
-                <br>
-                <br>
-
-                <input name="submit" class="submit" type="submit">
+          
+          <div class="contacttext">
       
-              </form>
-            </div>
+            <h2>Contact Us</h2>
+            
+            <form onsubmit="return checkForm(this);" method="post" action="php\contactform.php" >
+              <label for="name">Vorname/Name:</label><br>
+              <input type="text" name="name" autocapitalize="word">
+                  
+              <label for="email" autocomplete="on" >Email:</label><br>
+              <input type="email" name="email">
+          
+              
+              <label for="number" autocomplete="on">Telefon:</label><br>
+              <input type="tel" name="number">
+          
+
+              <label for="howyouhear" style="color: whitesmoke;">Woher haben Sie von uns gehört?</label>
+              <select name="howyouhear">
+                <option value=""></option>
+                <option value="Empfehlung von Bekannten.">Empfehlung von Bekannten.</option>
+                <option value="google">Google</option>
+                <option value="forgot">Habe ich vergessen.</option>
+                <option value="Sonstiges">Sonstiges</option>
+              </select>
+        
+              
+              <label for="message">Nachricht:</label>
+              <textarea name="message" name="message" rows="5"></textarea>
+
+  
+              <input class="checkbox" type="checkbox" name="updateme" value="yes">
+              <label for="update">Ich möchte beim Launch von rabbit legal informiert werden.</label>
+              
+              <input class="checkbox" type="checkbox" required name="terms">
+              <label for="terms">ich habe die Datenschutzerklärung gelesen und akzeptiere diese.</label>
+
+              <input name="submit" class="submit" type="submit">
+    
+            </form>
           </div>
+        
         </div>
-      </div>  
+
+      </div> 
+
+      <div class="contacttextmob d-md-none">
+
+          <form onsubmit="return checkForm(this);" method="post" action="php\contactform.php" >
+            <label for="name">Vorname/Name:</label><br>
+            <input type="text" name="name" autocapitalize="word">
+            
+            <label for="email" autocomplete="on" >Email:</label><br>
+            <input type="email" name="email">
+            
+            <label for="number" autocomplete="on">Telefon:</label><br>
+            <input type="tel" name="number">
+
+            <label for="howyouhear" style="color: whitesmoke;">Woher haben Sie von uns gehört?</label>
+            <select name="howyouhear">
+              <option value=""></option>
+              <option value="Empfehlung von Bekannten.">Empfehlung von Bekannten.</option>
+              <option value="google">Google</option>
+              <option value="forgot">Habe ich vergessen.</option>
+              <option value="Sonstiges">Sonstiges</option>
+            </select>
+            
+            <label for="message">Nachricht:</label><br>
+            <textarea name="message" name="message" rows="5"></textarea>
+            <br>
+
+
+            <input class="checkbox" type="checkbox" name="updateme" value="yes">
+            <label for="update">Ich möchte beim Launch von rabbit legal informiert werden.</label><br>
+            
+            <input class="checkbox" type="checkbox" required name="terms">
+            <label for="terms">ich habe die Datenschutzerklärung gelesen und akzeptiere diese.</label>
+            <br>
+            <br>
+
+            <input name="submit" class="submit" type="submit">
+  
+          </form>
+          <div class="vidtext2mob d-sm-none">
+            <h2>Contact Form</h2>
+          </div>
+      </div> 
+      
+        
       
       
 

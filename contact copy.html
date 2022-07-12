@@ -76,104 +76,75 @@
 
     <!---------Body Start----------->
 
-    <div class="container-fluid" id="interact" style="width: 100%;">
-
-      <div class="container-fluid jumbo">  
-        <video id="vidint" autoplay muted src="images\interact1.mp4#t=,5.9"></video>
-        <div class="box d-none d-sm-block">
-          <div class="vidtext">
-            <h2>rabbit interact</h2>
-            <h3>Wie ist der Stand?</h3>
-          </div>
-        </div>
-        <div class="vidtext2mob d-sm-none">
-          <h2>rabbit interact</h2>
-          <h3>Wie ist der Stand?</h3>
-        </div>
-      </div>
+    <div class="container-fluid" id="contact" style="width: 100%;">
       
-      <div style="position: relative;">
-        <div class="para-container">
-          <div class="para"></div>
-          <div class="para"></div>
-        </div>
-      </div>
-
-      <div class="bodyhead container-fluid">
-        <h2>Klientenplattform</h2>
-        <p>Auf unserer Plattform können Sie einfach und effizient mit Klientinnen und Klienten sowie mit anderen 
-          Partnern zusammenarbeiten. Eine sichere und effiziente Kommunikation – standardisiert und simpel. 
-        </p>
-        <ul>
-          <li>Die sichere Plattform, die Ihnen hilft, Klienten zu binden, indem sie die Kommunikation stark vereinfacht</li>
-          <li>Kollaborative Zusammenarbeit mit dem Klienten, indem Dokumente hochgeladen werden können und Klienten die Möglichkeit haben, Anfragen zu erfassen und den Status der Anfrage aktiv zu verfolgen</li>
-          <li>Automatische Information an den Klienten bei der Registrierung der Anfrage </li>
-          <li>Informationen werden entsprechend der Rolle auf der Klientenplattform geteilt</li>
-          <li>Sämtliche ausgehende und eingehende Kommunikation wird auf der Klientenplattform abgebildet</li>
-          <li>Die Nutzeroberfläche der Klientenplattform entspricht Ihrem Branding (Integration von Logo und Farbe)</li>
-        </ul>
-      </div>
-
-      <div class="container-fluid imcurious">
-        <a href="contact.html">ich bin neugierig</a>
-      </div>
-
-      
-      <div class="container-fluid conman">
-        
-        <div class="row">
-          <div class="col-sm-4">
-          <h1><u>Vertragsverwaltung</u></h1>
-          </div>
-        </div>  
-        
-        <div style="color: white;">
-          <ul class="row justify-content-between">
-            <li class="col-sm-3">
-              Abbildung von verschiedenen Verträgen 
-            </li>
-              <br>
-            <li class="col-sm-3">
-              Automatische Verrechnung nach definierter Frequenz (Jährlich, halbjährlich, vierteljährlich, monatlich)
-            </li>
+      <div id="contactform">
+        <div class="formbox">
+          <form onsubmit="return checkForm(this);" method="post" action="php\contactform.php" >
+            <label for="name">Vorname/Name:</label><br>
+            <input type="text" name="name" autocapitalize="word">
             <br>
-            <li class="col-sm-3">
-              Verknüpfung mit Klientenplattform, damit ersichtlich wird, ob sich Leistungen lohnen
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p><i>(Hinweis: Wichtig für Legal Care oder aber auch für rabbit it – Verwalten von Garantien, 
-        Wartungsverträgen und Support)</i></p>
-    </div>
-
-      
-    <div class="container-fluid interactpagelinks">
-      <div class="row">
+                
+            <label for="email" autocomplete="on" >Email:</label><br>
+            <input type="email" name="email">
+            <br>
         
-        <!-- <div class="col-md-7 col-12 links1">
-          <h1>Unsere <u>Kompetenzen</u></h1>
-          <div>
-            <a href="nothing.html">Angebot</a>
-            <a href="nothing.html">Preis</a>
-            <a href="nothing.html">Projektbegleitung</a>
-          </div>
-        </div> -->
-              
-              
             
+            <label for="number" autocomplete="on">Telefon:</label><br>
+            <input type="tel" name="number">
+            <br>
+        
 
-        <div class="col-md-5 col-12 links2"> 
-          <h1>Aus dem Haus rabbit IT</h1>
-          <div>
-            <a href="index.html">rabbit it</a>
-            <a href="rabbit.legal.html">rabbit legal</a>
-          </div>
-        </div>
+            <label for="howyouhear" style="color: whitesmoke;">Woher haben Sie von uns gehört?</label><br>
+            <select name="howyouhear">
+              <option value=""></option>
+              <option value="Empfehlung von Bekannten.">Empfehlung von Bekannten.</option>
+              <option value="google">Google</option>
+              <option value="forgot">Habe ich vergessen.</option>
+              <option value="Sonstiges">Sonstiges</option>
+            </select>
+            <br>
       
-      </div>  
-    </div>
+            
+            <label for="message">Nachricht:</label><br>
+            <textarea name="message" name="message" rows="5"></textarea>
+            <br>
 
+
+            <input class="checkbox" type="checkbox" name="updateme" value="yes">
+            <label for="update">Ich möchte beim Launch von rabbit legal informiert werden.</label>
+            <br>
+            
+            <input class="checkbox" type="checkbox" required name="terms">
+            <label for="terms">ich habe die Datenschutzerklärung gelesen und akzeptiere diese.</label>
+            <br>
+
+            <input name="submit" class="submit" type="submit">
+  
+          </form>
+        </div>
+
+      </div>
+      
+        
+      
+      
+
+      <div class="container-fluid mainpagelinks">
+        <div class="row">
+                
+          <div class="col-md-5 col-12 links2"> 
+            <h1>Aus dem Haus rabbit IT</h1>
+            <div>
+              <a href="rabbit.legal.html">rabbit it</a>
+              <a href="rabbit.legal.html">rabbit legal</a>
+              <a href="rabbit.interact.html">rabbit interact</a>
+            </div>
+          </div>
+        
+        </div>  
+      </div>
+    </div>
 
     <hr class="footer-break">
 
