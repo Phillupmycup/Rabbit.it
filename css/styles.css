@@ -19,10 +19,8 @@ body {
 /* ----------------Navbar------------------------------------------------------------------------------------ */
 
 html header .navbar {
-    align-items: baseline;
-    padding-top: 0%;
-    padding-bottom: 16pt;
     background-color: rgb(40, 42, 53);
+    padding: 0.6rem 1rem;
 }
 
 header .navbar .navbarNav {
@@ -34,7 +32,6 @@ header .navbar .navbarNav {
 }
  .navbar-dark .navbar-nav .nav-link {
      color: whitesmoke;
-     margin-top: 10pt;
      padding-left: 0;
 }
 
@@ -108,7 +105,6 @@ header .navbar .navbarNav {
         padding-bottom: 0%;
         padding-left: 0.5em;
         border: solid rgb(108, 221, 131);
-        margin-top: 8pt;
     }
 
     .navbar-dark .navbar-nav #kontakt:hover {
