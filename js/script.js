@@ -36,7 +36,7 @@ $(function() {
 
 					$.ajax({   	
 				      type: "POST",
-				      url: "http://localhost/rabbit.it/php/send-email.php",
+				      url: "php/send-email.php",
 				      data: $(form).serialize(),
 
 				      beforeSend: function() { 
