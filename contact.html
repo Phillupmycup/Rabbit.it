@@ -78,99 +78,74 @@
 
     <div class="container-fluid" id="contact" style="width: 100%;">
       
-      <div class="container-fluid jumbo d-none d-md-block">  
-        <div class="container-fluid vidbox">
-          <video autoplay muted width="100%" src="images/contact.mp4#t=,10"></video>
-        </div>  
-        <div class="box">
-          
-          <div class="contacttext">
-      
-            <h2>Contact Us</h2>
-            
-            <form onsubmit="return checkForm(this);" method="post" action="php\contactform.php" >
-              <label for="name">Vorname/Name:</label><br>
-              <input type="text" name="name" autocapitalize="word">
+      <div class="container-fluid contact">
+        <div style="background-color: rgb(108, 221, 131);" class="row">
+  
+          <div class="col-12">
+            <div class="row justify-content-center">
+            <div class="inbox col-lg-8 ">
+              <h3 class="heading">ich bin neugierig</h3>
+              <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                <div class="row">
                   
-              <label for="email" autocomplete="on" >Email:</label><br>
-              <input type="email" name="email">
-          
-              
-              <label for="number" autocomplete="on">Telefon:</label><br>
-              <input type="tel" name="number">
-          
-
-              <label for="howyouhear" style="color: whitesmoke;">Woher haben Sie von uns gehört?</label>
-              <select name="howyouhear">
-                <option value=""></option>
-                <option value="Empfehlung von Bekannten.">Empfehlung von Bekannten.</option>
-                <option value="google">Google</option>
-                <option value="forgot">Habe ich vergessen.</option>
-                <option value="Sonstiges">Sonstiges</option>
-              </select>
-        
-              
-              <label for="message">Nachricht:</label>
-              <textarea name="message" name="message" rows="5"></textarea>
-
+                  <div class="col-lg-6 form-group">
+                    <label for="name" class="col-form-label">Vorname/Name *</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                  </div>
+                  <div class="col-lg-6 form-group">
+                    <label for="telephone" class="col-form-label">Telefon *</label>
+                    <input type="text" class="form-control" name="telephone" id="telephone" placeholder="Your Phone Number">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 form-group">
+                    <label for="email" class="col-form-label">E-mail *</label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Your email address">
+                  </div>
+                  <div class="col-lg-6 form-group">
+                    <label for="howyouhear" class="col-form-label">Woher haben Sie von uns gehört?</label>
+                    <select class="custom-select" id="howyourhear" name="howyouhear">
+                      <option selected>Wählen...</option>
+                      <option value="Empfehlung von Bekannten">Empfehlung von Bekannten</option>
+                      <option value="Google">Google</option>
+                      <option value="Habe ich vergessen">Habe ich vergessen</option>
+                      <option value="Sonstige">Sonstige</option>
+                    </select>
+                  </div>
+                </div>
   
-              <input class="checkbox" type="checkbox" name="updateme" value="yes">
-              <label for="update">Ich möchte beim Launch von rabbit legal informiert werden.</label>
-              
-              <input class="checkbox" type="checkbox" required name="terms">
-              <label for="terms">ich habe die Datenschutzerklärung gelesen und akzeptiere diese.</label>
-
-              <input name="submit" class="submit" type="submit">
-    
-            </form>
+                <div class="row">
+                  <div class="col-lg-12 form-group">
+                    <label for="message" class="col-form-label">Nachricht *</label>
+                    <textarea class="form-control" name="message" id="message" rows="7"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <label for="updateme" class="col-form-label" style="display: block;"><input style="margin-right: 1%" type="checkbox" name="updateme" id="updateme" value="Yes">Ich möchte beim Launch von rabbit legal informiert werden.</label>
+                  </div>
+                  <div class="col-12 form-group">
+                    <label for="accept" class="col-form-label" style="display: block;"><input required style="margin-right: 1%" type="checkbox" name="accept" id="accept" value="Yes" >ich habe die Datenschutzerklärung gelesen und akzeptiere diese.</label>
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="col-lg-12">
+                    <input type="submit" value="Send Message" class="btn btn-block btn-primary rounded-0 py-2 px-4">
+                    <span class="submitting"></span>
+                  </div>
+                </div>
+              </form>
+  
+              <div id="form-message-warning mt-4"></div> 
+              <div id="form-message-success">
+                Your message was sent, thank you!
+              </div>
+            </div>
+            </div>
           </div>
-        
         </div>
-
-      </div> 
-
-      <div class="contacttextmob d-md-none">
-
-          <form onsubmit="return checkForm(this);" method="post" action="php\contactform.php" >
-            <label for="name">Vorname/Name:</label><br>
-            <input type="text" name="name" autocapitalize="word">
-            
-            <label for="email" autocomplete="on" >Email:</label><br>
-            <input type="email" name="email">
-            
-            <label for="number" autocomplete="on">Telefon:</label><br>
-            <input type="tel" name="number">
-
-            <label for="howyouhear" style="color: whitesmoke;">Woher haben Sie von uns gehört?</label>
-            <select name="howyouhear">
-              <option value=""></option>
-              <option value="Empfehlung von Bekannten.">Empfehlung von Bekannten.</option>
-              <option value="google">Google</option>
-              <option value="forgot">Habe ich vergessen.</option>
-              <option value="Sonstiges">Sonstiges</option>
-            </select>
-            
-            <label for="message">Nachricht:</label><br>
-            <textarea name="message" name="message" rows="5"></textarea>
-            <br>
-
-
-            <input class="checkbox" type="checkbox" name="updateme" value="yes">
-            <label for="update">Ich möchte beim Launch von rabbit legal informiert werden.</label><br>
-            
-            <input class="checkbox" type="checkbox" required name="terms">
-            <label for="terms">ich habe die Datenschutzerklärung gelesen und akzeptiere diese.</label>
-            <br>
-            <br>
-
-            <input name="submit" class="submit" type="submit">
-  
-          </form>
-          <div class="vidtext2mob d-sm-none">
-            <h2>Contact Form</h2>
-          </div>
-      </div> 
-      
+      </div>
         
       
       
@@ -232,9 +207,10 @@
       </div>
     </footer>
 
-    <script src="js/jquery-3.6.0.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
     
   </body>

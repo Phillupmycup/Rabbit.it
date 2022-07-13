@@ -1,7 +1,7 @@
 <?php
 
 // Replace this with your own email address
-$to = 'joefrey.mahusay@gmail.com';
+$to = 'Phillip.Rodrigues@gmail.com';
 
 function url(){
   return sprintf(
@@ -18,9 +18,9 @@ if($_POST) {
    $subject = trim(stripslashes($_POST['subject']));
    $contact_message = trim(stripslashes($_POST['message']));
 
-   $organization = trim(stripslashes($_POST['organization']));
-   $budget = trim(stripslashes($_POST['budget']));
-   $date = trim(stripslashes($_POST['date']));
+   $telephone = trim(stripslashes($_POST['telephone']));
+   $howyouhear = trim(stripslashes($_POST['howyouhear']));
+   $updatedate = trim(stripslashes($_POST['updateme']));
 
    
 	if ($subject == '') { $subject = "Contact Form Submission"; }
@@ -29,9 +29,9 @@ if($_POST) {
    $message .= "Email from: " . $name . "<br />";
 	 $message .= "Email address: " . $email . "<br />";
 
-   $message .= "Organization: " . $organization . "<br />";
-   $message .= "Budget: " . $budget . "<br />";
-   $message .= "Lunch Date: " . $date . "<br />";
+   $message .= "telephone: " . $telephone . "<br />";
+   $message .= "howyouhear: " . $howyouhear . "<br />";
+   $message .= "updateme: " . $updateme . "<br />";
 
    $message .= "Message: <br />";
    $message .= nl2br($contact_message);

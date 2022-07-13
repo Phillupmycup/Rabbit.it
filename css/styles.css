@@ -121,12 +121,6 @@ a.nav-link {
     padding-bottom: 0%;
 }
 
-li.nav-item a.nav-link {
-    padding-top: 0%;
-}
-
-
-
 
 /*------------------Jumbotron--and---bodyhead--------------------------------------------------------------------*/
 
@@ -1015,38 +1009,6 @@ video {
 
 /* ------------------------------------- contact form ------------------------------------------------- */
 
-#contact .box {
-    background-color: rgb(108, 221, 131);
-    display: block;
-    height: 100%;
-    width: 33%;
-    z-index: 3;
-    position: absolute;
-    top: 0px;
-    left: 0;   
-}
-
-#contact .box::before {
-    border: 25vw solid transparent;
-    border-left: 12vw solid rgb(108, 221, 131);
-    content: "";
-    position: absolute;
-    display: block;
-    height: 0;
-    width: 0;
-    border-right: 0;
-    top: o;
-    left: 99.5%;
-    z-index: 3;
-}
-
-.contact {
-    height: 80vh;
-}
-
-
-
-
 
 .text-black {
     color: rgb(40, 42, 53); }
@@ -1095,10 +1057,12 @@ video {
     color: whitesmoke;
     border: none;
     border-radius: 4px !important;
-    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1) !important;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1) !important; }
+    background: rgb(180, 157, 229);
+    }
     .btn:hover {
-      color: whitesmoke; }
+      color: whitesmoke; 
+      background-color: rgb(231, 121, 184);
+    }
     .btn:active, .btn:focus {
       outline: none;
       -webkit-box-shadow: none;
@@ -1106,10 +1070,25 @@ video {
   
   .inbox {
     padding: 40px;
-    border: .5vw solid rgb(40, 42, 53);
+    border: .25vw solid rgb(40, 42, 53);
     background: rgb(108, 221, 131);
-    -webkit-box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
-    box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08); }
+    margin-top: 11%;
+    margin-bottom: 11%;
+    max-width: 1200px;
+  }
+
+  @media screen and (min-width: 2570px) {
+    .inbox {
+        transform: scale(2);
+        border: .125vw solid rgb(40, 42, 53);
+      }
+  }
+
+  @media screen and (max-width: 991px) {
+    .inbox {
+        margin: 0;
+      }
+  }
 
     .inbox h3 {
       font-size: 14px;
