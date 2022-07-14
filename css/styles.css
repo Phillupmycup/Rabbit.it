@@ -21,6 +21,7 @@ body {
 html header .navbar {
     background-color: rgb(40, 42, 53);
     padding: 0.6rem 1rem;
+    align-items: unset;
 }
 
 header .navbar .navbarNav {
@@ -33,6 +34,7 @@ header .navbar .navbarNav {
  .navbar-dark .navbar-nav .nav-link {
      color: whitesmoke;
      padding-left: 0;
+     padding-top: 23px;
 }
 
  .navbar-nav > li {
@@ -160,13 +162,13 @@ video {
 }
 
 #imgout {
-    margin-bottom: -18%;
+    margin-bottom: -17.6%;
     width: 100%;
 }
 
 #imgsupport {
     margin-left: -13%;
-    margin-bottom: -9%;
+    margin-bottom: -5.3%;
     width: 100%;
 }
 
@@ -1138,7 +1140,7 @@ video {
     max-width: 95%;
   }
   
-  .panel-footer {
+  .panel-footer, .panel-footer a {
     margin-top: .5vw;
     color: rgba(255, 255, 255, 0.562); 
     padding-bottom: 30px;
@@ -1147,23 +1149,29 @@ video {
     font-size: .8vw;
   }
 
+  #footlogo img {
+    width: 20vw;
+  }
+
   .panel-footer span {
     color: whitesmoke;
   }
 
-  #address span {
-    font-size: 3vw;
+  @media screen and (max-width: 850px) {
+
+    .panel-footer, .panel-footer a {
+        font-size: 1.2vw;
+      }   
   }
 
   @media screen and (max-width: 575px) {
    
-    .panel-footer {
+    .panel-footer, .panel-footer a {
         font-size: 20px;
+        text-align: center;
+        margin-top: 10%;
       }
 
-      #address span {
-        font-size: 40px;
-      }
 
 
   }
