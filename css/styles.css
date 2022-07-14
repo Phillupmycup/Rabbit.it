@@ -37,6 +37,11 @@ header .navbar .navbarNav {
      padding-top: 23px;
 }
 
+button.navbar-toggler {
+    height: 56px;
+    margin-top: 6.5px;
+}
+
  .navbar-nav > li {
      margin-left: 15pt;
 }
@@ -314,7 +319,7 @@ video {
 
 
 .box2 .supportlinks h4 {
-    color: whitesmoke;
+    color: rgb(40, 42, 53);
     text-align: center;
     font-size: 1vw;
     line-height: 2.5;
@@ -322,7 +327,7 @@ video {
 
 
 .box2 .bi {
-    color: whitesmoke;
+    color: rgb(40, 42, 53);
     text-align: center;
     font-size: 7vw;
     line-height: 1.1;
@@ -817,7 +822,7 @@ video {
     border: .3vw dotted rgb(108, 221, 131);
 }
 
-.supportlinksbody a:hover h4 , .supportlinks a:hover div {
+.supportlinksbody a:hover h4 , .supportlinks a:hover div, .supportlinksbody a:hover .bi {
     color: rgb(108, 221, 131);
 }
 
@@ -1138,42 +1143,42 @@ video {
 
 #footer {
     max-width: 95%;
-  }
+}
   
-  .panel-footer, .panel-footer a {
+.panel-footer, .panel-footer a {
     margin-top: .5vw;
     color: rgba(255, 255, 255, 0.562); 
-    padding-bottom: 30px;
     padding-top: 1%;
     background-color: rgb(40, 42, 53);
     font-size: .8vw;
-  }
+}
 
-  #footlogo img {
+#footlogo img {
     width: 20vw;
-  }
+}
 
-  .panel-footer span {
+.panel-footer span {
     color: whitesmoke;
-  }
+}
 
-  @media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) {
 
     .panel-footer, .panel-footer a {
         font-size: 1.2vw;
-      }   
-  }
+    }   
+}
 
-  @media screen and (max-width: 575px) {
-   
+@media screen and (max-width: 575px) {
+
     .panel-footer, .panel-footer a {
         font-size: 20px;
         text-align: center;
         margin-top: 10%;
-      }
+    }
+  
+    #footlogo img {
+        width: 250px;
+    }
+}
 
-
-
-  }
-
-  /* ----------------------------------------end-------------------------------------------------------- */
+/* ----------------------------------------end-------------------------------------------------------- */
