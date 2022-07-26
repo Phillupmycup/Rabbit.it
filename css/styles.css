@@ -486,8 +486,10 @@ video {
 @media screen and (max-width: 575px) {
 
     #main #vidit {
-        height: 85vh;
-        margin-left: -95%;
+        height: 92vh;
+        margin-left: -65vh;
+        margin-top: -60px;
+        padding-bottom: 30px;
         display: block;
         width: auto;
         margin-bottom: 0;
