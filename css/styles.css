@@ -1,3 +1,64 @@
+@font-face {
+    font-family: "myfont";
+    src: url("fonts/Degular-Regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "myfont";
+    src: url("fonts/Degular-Bold.woff2") format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "myfont";
+    src: url("fonts/Degular-Bold_Italic.woff2") format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "myfont";
+    src: url("fonts/Degular-Italic.woff2") format('woff2');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'basier';
+    src: url('fonts/basiercirclemono-medium-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'basier';
+    src: url('fonts/basiercirclemono-mediumitalic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'basier';
+    src: url('fonts/basiercirclemono-semibold-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'basier';
+    src: url('fonts/basiercirclemono-semibolditalic-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
 body, html {
     width: 100%;
 }
@@ -7,11 +68,17 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgb(40, 42, 53);
+    font-family: myfont;
+
 }
 
 #main , #legal , #interact , #contact {
     padding: 0%;
     margin-top: 90px;
+}
+
+h1, h2, h3, h4 {
+    font-family: basier;
 }
 
 
@@ -255,13 +322,13 @@ video {
 }
 
 .jumbo h2 {
-    font-size: 5.7vw;
+    font-size: 4.2vw;
     color: rgb(40, 42, 53);
 }
 
 .jumbo h3 {
     line-height: 1;
-    font-size: 2.5vw;
+    font-size: 2vw;
     color: rgb(40, 42, 53);
 }
     
@@ -397,7 +464,7 @@ video {
 }
 
 .bodyhead p {
-    font-size: 2vw;
+    font-size: 2.1vw;
     text-align: center;
 }
 
@@ -410,7 +477,7 @@ video {
 }
 
 .bodyhead li {
-    font-size: 1.7vw;
+    font-size: 1.8vw;
     margin-bottom: 2vw;
     line-height: 1.2;
 }
@@ -420,7 +487,7 @@ video {
 
     #main #vidit {
         height: 85vh;
-        margin-left: -550px;
+        margin-left: -500px;
         display: block;
         width: auto;
         margin-bottom: 0;
@@ -436,7 +503,7 @@ video {
 
     #interact #vidint {
         height: 85vh;
-        margin-left: -550px;
+        margin-left: -500px;
         display: block;
         width: auto;
         margin-bottom: 0;
@@ -492,7 +559,7 @@ video {
     }
 
     .vidtext2mob h2 {
-        font-size:12vw;
+        font-size: 10vw;
     }
 
     .vidtext2mob h3 {
@@ -507,9 +574,14 @@ video {
     }
     
     .bodyhead p {
-        font-size: 2.7vw;
+        font-size: 3.1vw;
         text-align: center;
     }
+
+    .bodyhead li {
+        font-size: 2.6vw;
+    }
+    
 
 }
 
