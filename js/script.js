@@ -3,6 +3,17 @@ $(function() {
 	'use strict';
 
 
+  const links = document.querySelectorAll("[data-part1][data-part2][data-part3]");
+for (const link of links) {
+  const attrs = link.dataset;
+  link.setAttribute(
+    "href",
+    `mailto:${attrs.part1}@${attrs.part2}.${attrs.part3}?subject=${attrs.subject}`
+  );
+  link.textContent = `${attrs.part1}@${attrs.part2}.${attrs.part3}`;
+}
+
+
 	var contactForm = function() {
 
 		if ($('#contactForm').length > 0 ) {
@@ -24,9 +35,11 @@ $(function() {
 				},
 				messages: {
 					name: "Please enter your name",
+          telephone: "Please enter a valid phone number",
 					email: "Please enter a valid email address",
 					message: "Please enter a message",
-          telephone: "Please enter a message"
+          accept: "This is required &nbsp &nbsp",
+
 				},
 				/* submit via ajax */
 				submitHandler: function(form) {		
@@ -75,7 +88,7 @@ $(function() {
   $("#collapse1").hover(function () {
     $(this).prev("a").css("color", "rgb(180, 157, 229)");
     $(".navbar").css("background-color", "#000000");
-    $(".navlogo").attr("src", "images/Logos/rabbit_it_redeye.svg");
+    $(".navlogo").attr("src", "images/Logos/rabbit_it_redeye_ears.svg");
   
   },    function()  {
     $(this).prev("a").css("color", "rgb(218, 218, 218)");
@@ -87,7 +100,7 @@ $(function() {
   $(".it").hover(function () {
     $(this).css("color", "rgb(180, 157, 229)");
     $(".navbar").css("background-color", "#000000");
-    $(".navlogo").attr("src", "images/Logos/rabbit_it_redeye.svg");
+    $(".navlogo").attr("src", "images/Logos/rabbit_it_redeye_ears.svg");
   },    function()  {
     $(this).css("color", "rgb(218, 218, 218)");
     $(".navbar").css("background-color", "rgb(40, 42, 53)");
@@ -98,7 +111,7 @@ $(function() {
   $("#collapse2").hover(function () {
       $(this).prev("a").css("color", "rgb(108, 221, 131)");
       $(".navbar").css("background-color", "#000000");
-      $(".navlogo").attr("src", "images/Logos/rabbit_legal_redeye.svg");
+      $(".navlogo").attr("src", "images/Logos/rabbit_legal_redeye_ears.svg");
   },    function()  {
       $(this).prev("a").css("color", "rgb(218, 218, 218)");
       $(".navbar").css("background-color", "rgb(40, 42, 53)");
@@ -109,7 +122,7 @@ $(function() {
   $(".legal").hover(function () {
     $(this).css("color", "rgb(108, 221, 131)");
     $(".navbar").css("background-color", "#000000");
-    $(".navlogo").attr("src", "images/Logos/rabbit_legal_redeye.svg");
+    $(".navlogo").attr("src", "images/Logos/rabbit_legal_redeye_ears.svg");
   },    function()  {
     $(this).css("color", "rgb(218, 218, 218)");
     $(".navbar").css("background-color", "rgb(40, 42, 53)");
