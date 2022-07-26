@@ -8,6 +8,29 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript"> 
+
+      function UnCryptMailto( s )
+      {
+          var n = 0;
+          var r = "";
+          for( var i = 0; i < s.length; i++)
+          {
+              n = s.charCodeAt( i );
+              if( n >= 8364 )
+              {
+                  n = 128;
+              }
+              r += String.fromCharCode( n - 1 );
+          }
+          return r;
+      }
+  
+      function linkTo_UnCryptMailto( s )
+      {
+          location.href=UnCryptMailto( s );
+      }
+      </script>
     <title>New website</title>
   </head>
 
@@ -182,9 +205,9 @@
 
           <section id="footcontact" class="col-sm-3">
             <span>Kontaktieren Sie uns</span><br>
-            <a href="" data-part1="contact" data-part2="rabbit.it" data-part3="ch" data-subject="General%20Questions"></a>
+            <a href="javascript:linkTo_UnCryptMailto('nbjmup;tvqqpsuAsbccju.ju/di');">support@rabbit-it.ch</a>
             <br>
-            <a href="tel:+41-41-562-08-22">Tel: +41 41 562 08 22<br></a>
+            <a href="tel:+41415620822">Tel: +41 41 562 08 22<br></a>
             <a href="contact.html">Kontaktseite</a>
             <hr class="d-block d-sm-none footer-break">
           </section>
