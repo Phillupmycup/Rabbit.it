@@ -945,7 +945,8 @@ video {
 
 #legal .imcurious a {
     color: #2a2831;
-    background-color: rgb(108, 221, 131);
+    background-color: rgb(108, 221, 131); 
+    border: 1px solid rgb(108, 221, 131);   
     border-radius: 35px;
     padding-left: 5%;
     padding-right: 5%;
