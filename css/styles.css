@@ -1254,6 +1254,13 @@ video {
     }   
 }
 
+@media screen and (max-width: 770px) {
+
+    .panel-footer, .panel-footer a {
+        font-size: 1.7vw;
+    }   
+}
+
 @media screen and (max-width: 575px) {
 
     .panel-footer, .panel-footer a {
