@@ -1050,6 +1050,7 @@ video {
 #interact .imcurious a {
     color: #2a2831;
     background-color: rgb(231, 121, 184);
+    border: 1px solid rgb(231, 121, 184);
     border-radius: 35px;
     padding-left: 5%;
     padding-right: 5%;
