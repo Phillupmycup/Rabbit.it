@@ -95,9 +95,7 @@ header .navbar .navbarNav {
     align-items: baseline;
 }
 
-.navbar-brand {
-    padding-right: 20pt;
-}
+
  .navbar-dark .navbar-nav .nav-link {
      color: whitesmoke;
      padding-left: 0;
@@ -109,10 +107,6 @@ button.navbar-toggler {
     margin-top: 6.5px;
 }
 
- .navbar-nav > li {
-     margin-left: 15pt;
-}
- 
 
 @media screen and (min-width: 768px) {
     
@@ -142,6 +136,10 @@ button.navbar-toggler {
             display: block;
         }
 
+    }
+
+    .navbar-brand {
+        padding-right: 40pt;
     }
 
 }
@@ -188,9 +186,6 @@ button.navbar-toggler {
     }
 }
 
-li.nav-item {
-    margin-left: 10px;
-}
 a.nav-link {
     padding-bottom: 0%;
 }
@@ -1246,6 +1241,11 @@ video {
 .panel-footer span {
     color: whitesmoke;
 }
+
+#dummy {
+    display: none;
+}
+
 
 @media screen and (max-width: 1050px) {
 

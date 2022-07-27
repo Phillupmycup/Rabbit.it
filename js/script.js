@@ -144,8 +144,6 @@ $(function() {
     $(".navlogo").attr("src", logo);
   }
   );
-
-
   
 });
 
