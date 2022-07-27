@@ -25,17 +25,17 @@ $(function() {
 					}
 				},
 				messages: {
-					name: "Please enter your name",
-          telephone: "Please enter a valid phone number",
-					email: "Please enter a valid email address",
-					message: "Please enter a message",
-          accept: "This is required &nbsp &nbsp",
+					name: "Bitte geben Sie Ihren Namen ein",
+          telephone: "Bitte geben Sie eine gültige Telefonnummer ein",
+					email: "Bitte geben Sie eine gültige E-mail Adresse ein",
+					message: "Bitte geben Sie eine Nachricht ein",
+          accept: "Dies ist erforderlich &nbsp &nbsp",
 
 				},
 				/* submit via ajax */
 				submitHandler: function(form) {		
 					var $submit = $('.submitting'),
-						waitText = 'Submitting...';
+						waitText = 'Übermitteln...';
 
 					$.ajax({   	
 				      type: "POST",
@@ -62,7 +62,7 @@ $(function() {
 			            }
 				      },
 				      error: function() {
-				      	$('#form-message-warning').html("Something went wrong. Please try again.");
+				      	$('#form-message-warning').html("Es ist ein Fehler aufgetreten, bitte versuchen Sie es nochmals.");
 				         $('#form-message-warning').fadeIn();
 				         $submit.css('display', 'none');
 				      }
