@@ -18,17 +18,12 @@ $(function() {
           telephone: {
 						required: true,
 					  minlength: 8
-					},
-					message: {
-						required: true,
-						minlength: 5
 					}
 				},
 				messages: {
 					name: "Bitte geben Sie Ihren Namen ein",
           telephone: "Bitte geben Sie eine gültige Telefonnummer ein",
 					email: "Bitte geben Sie eine gültige E-mail Adresse ein",
-					message: "Bitte geben Sie eine Nachricht ein",
           accept: "Dies ist erforderlich &nbsp &nbsp",
 
 				},
