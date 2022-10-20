@@ -995,6 +995,75 @@ video {
 
 
 
+/* ------------------------Rabbit legal offer -------------------------------------------------- */
+
+
+#accordion {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#accordion .card {
+    width: 95%;
+}
+
+#accordion .card-header {
+    padding: 0;
+}
+
+#accordion .card-body {
+    background-color: rgb(40, 42, 53);
+}
+
+#accordion h2 {
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#accordion button {
+    background-color: rgb(108, 221, 131);
+    color: rgb(40, 42, 53);
+    border: .2vw solid rgb(40, 42, 53);
+    font-size: 1.3vw;
+    height: fit-content;
+    text-decoration: none;
+}
+
+#accordion button:hover {
+    background-color: rgb(231, 121, 184);
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#accordion ul {
+    margin-bottom: 0;
+}
+
+#accordion li {
+    color: whitesmoke;
+    font-size: .9vw;
+}
+
+@media screen and (max-width: 991px) {
+
+    #accordion button {
+        font-size: 3.4vw;
+    } 
+
+    #accordion li {
+        color: whitesmoke;
+        font-size: 2.5vw;
+    }
+    
+    
+}
+
+
+
 
 /* ------------------------Rabbit legal project support -------------------------------------------------- */
 
