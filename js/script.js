@@ -139,6 +139,88 @@ $(function() {
     $(".navlogo").attr("src", logo);
   }
   );
+
+  var imgSrc = $("#diagramImg");
+
+  $("#headingOne").click(function () {
+    if (imgSrc.attr("src") !== "images/1Select.PNG") {
+      imgSrc.attr("src", "images/1Select.PNG")
+    } else {
+      imgSrc.attr("src", "images/noneSelect.PNG")
+    }
+  });
+  
+  $("#headingTwo").click(function () {
+    if (imgSrc.attr("src") !== "images/2Select.PNG") {
+      imgSrc.attr("src", "images/2Select.PNG")
+    } else {
+      imgSrc.attr("src", "images/noneSelect.PNG")
+    }
+  });
+
+  $("#headingThree").click(function () {
+    if (imgSrc.attr("src") !== "images/3Select.PNG") {
+      imgSrc.attr("src", "images/3Select.PNG")
+    } else {
+      imgSrc.attr("src", "images/noneSelect.PNG")
+    }
+  });
+
+  $("#headingFour").click(function () {
+    if (imgSrc.attr("src") !== "images/4Select.PNG") {
+      imgSrc.attr("src", "images/4Select.PNG")
+    } else {
+      imgSrc.attr("src", "images/noneSelect.PNG")
+    }
+  });
+
+  $("#headingFive").click(function () {
+    if (imgSrc.attr("src") !== "images/5Select.PNG") {
+      imgSrc.attr("src", "images/5Select.PNG")
+    } else {
+      imgSrc.attr("src", "images/noneSelect.PNG")
+    }
+  });
+
+  $("#headingSix").click(function () {
+    if (imgSrc.attr("src") !== "images/6Select.PNG") {
+      imgSrc.attr("src", "images/6Select.PNG")
+    } else {
+      imgSrc.attr("src", "images/noneSelect.PNG")
+    }
+  });
+
+  $("#headingSeven").click(function () {
+    if (imgSrc.attr("src") !== "images/7Select.PNG") {
+      imgSrc.attr("src", "images/7Select.PNG")
+    } else {
+      imgSrc.attr("src", "images/noneSelect.PNG")
+    }
+  });
+
+  $("#headingEight").click(function () {
+    if (imgSrc.attr("src") !== "images/8Select.PNG") {
+      imgSrc.attr("src", "images/8Select.PNG")
+    } else {
+      imgSrc.attr("src", "images/noneSelect.PNG")
+    }
+  });
+
+  $("#headingNine").click(function () {
+    if (imgSrc.attr("src") !== "images/9Select.PNG") {
+      imgSrc.attr("src", "images/9Select.PNG")
+    } else {
+      imgSrc.attr("src", "images/noneSelect.PNG")
+    }
+  });
+
+  $("#headingTen").click(function () {
+    if (imgSrc.attr("src") !== "images/10Select.PNG") {
+      imgSrc.attr("src", "images/10Select.PNG")
+    } else {
+      imgSrc.attr("src", "images/noneSelect.PNG")
+    }
+  });
   
 });
 

@@ -579,12 +579,12 @@ video {
     }
     
     .bodyhead p {
-        font-size: 3.3vw;
+        font-size: 4vw;
         text-align: center;
     }
 
     .bodyhead li {
-        font-size: 2.8vw;
+        font-size: 3.3vw;
     }
     
 
@@ -813,8 +813,7 @@ video {
 .outbody .outheader {
     border: solid rgb(231, 121, 184);
     margin-top: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 1%;
 }
 
 .outbody .outheader h1 {
@@ -842,17 +841,17 @@ video {
 
 .outoption h2 {
     color: rgb(108, 221, 131);
-    font-size: 1.3vw;
+    font-size: 1.5vw;
 }
 
 .outoption p {
     color: whitesmoke;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 .outoption li {
     color: whitesmoke;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 @media screen and (max-width: 575px) {
@@ -875,11 +874,11 @@ video {
     
     .outoption p {
         color: whitesmoke;
-        font-size: 2.5vw;
+        font-size: 3.3vw;
     }
     
     .outoption li {
-        font-size: 2.5vw;
+        font-size: 3.3vw;
     }
 
     
@@ -998,19 +997,28 @@ video {
 /* ------------------------Rabbit legal offer -------------------------------------------------- */
 
 #diagram img {
-    width: 100%;
-    height: auto;
+    height: 37vw;
     text-align: center;
+    margin-top: -4vw;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 10%;
     }
 
 #diagram {
-    margin-top: -4vw;
     width: 50%;
 }
 
 #accordion {
     width: 46%;
     margin-bottom: 3%;
+}
+
+.card {
+    background-color: rgb(40, 42, 53);
+    border: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 #accordion .card-header {
@@ -1032,11 +1040,9 @@ video {
 #accordion button {
     background-color: rgb(108, 221, 131);
     color: rgb(40, 42, 53);
-    border: .2vw solid rgb(40, 42, 53);
     font-size: 1.3vw;
     height: fit-content;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 #accordion button:hover {
@@ -1061,6 +1067,13 @@ video {
         display: flex;
         justify-content: center;
     }
+
+    #diagram img {
+        position: sticky;
+        position: -webkit-sticky;
+        bottom: 10%;
+        top: 15%;
+    }
 }    
 
 @media screen and (max-width: 991px) {
@@ -1068,7 +1081,8 @@ video {
     #diagram img {
         position: sticky;
         position: -webkit-sticky;
-        top: 40%;
+        bottom: 10%;
+        top: 15%;
     }
 
     #accordion button {
@@ -1079,6 +1093,10 @@ video {
         color: whitesmoke;
         font-size: 2.5vw;
         margin-left: 5%;
+    }
+
+    #accordion button {
+        font-size: 1.8vw;  
     }
     
     
@@ -1098,11 +1116,12 @@ video {
 
 .legalsupbody h2 {
     color: rgb(108, 221, 131);
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 .legalsupbody li {
-    color: whitesmoke
+    color: whitesmoke;
+    font-size: 1.8vw;
 }
 
 
