@@ -72,7 +72,7 @@ body {
 
 }
 
-#main , #legal , #interact , #contact {
+#main , #legal , #interact , #contact, #blog {
     padding: 0%;
     margin-top: 90px;
 }
@@ -997,15 +997,20 @@ video {
 
 /* ------------------------Rabbit legal offer -------------------------------------------------- */
 
+#diagram img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    }
 
-#accordion {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+#diagram {
+    margin-top: -4vw;
+    width: 50%;
 }
 
-#accordion .card {
-    width: 95%;
+#accordion {
+    width: 46%;
+    margin-bottom: 3%;
 }
 
 #accordion .card-header {
@@ -1031,6 +1036,7 @@ video {
     font-size: 1.3vw;
     height: fit-content;
     text-decoration: none;
+    
 }
 
 #accordion button:hover {
@@ -1046,9 +1052,24 @@ video {
 #accordion li {
     color: whitesmoke;
     font-size: .9vw;
+    margin-left: 1%;
 }
 
+@media screen and (min-width: 992px) {
+
+    #diagram {
+        display: flex;
+        justify-content: center;
+    }
+}    
+
 @media screen and (max-width: 991px) {
+
+    #diagram img {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 40%;
+    }
 
     #accordion button {
         font-size: 3.4vw;
@@ -1057,6 +1078,7 @@ video {
     #accordion li {
         color: whitesmoke;
         font-size: 2.5vw;
+        margin-left: 5%;
     }
     
     
@@ -1179,7 +1201,7 @@ video {
 .interactpagelinks .links1 a {
     color: rgb(40, 42, 53);
     cursor: pointer;
-    background-color: rgb(231, 121, 184);
+    background-color: rgb(231, 121, 183);
     border: solid rgb(231, 121, 184);
     border-width: 1px;
 }
@@ -1311,6 +1333,60 @@ video {
     font-size: 12px;
     color: rgb(40, 42, 53); }
   
+
+
+
+/* ----------------------------------------------Blog page-------------------------------------------------------- */
+
+#blog h1 {
+    font-size: 5.5vw;
+    color: rgb(108, 221, 131);
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+#blog .blogcontainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blogcontainer .row {
+    margin-bottom: 5%;
+}
+
+.blogbox img {
+    width: 100%;
+}
+
+.blogtext {
+    padding: 2%;
+}
+
+.blogbox h5 {
+    color: rgb(108, 221, 131);
+    font-size: 1.6vw;
+}
+
+.blogbox p {
+    color: rgb(245, 245, 245);
+    font-size: 1.15vw;
+}
+
+.blogbox a {
+    color: rgb(180, 157, 229);
+    font-size: 1.15vw;
+}
+
+.blogbox {
+    width: 30%;
+}
+
+.blogborder {
+    border: .2vw solid whitesmoke;
+}
+
 
 /* ----------------------------------------------Footer -------------------------------------------------------- */
 
