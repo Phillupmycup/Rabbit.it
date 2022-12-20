@@ -1402,6 +1402,7 @@ video {
     /* color: rgb(40, 42, 53); */
     color: rgb(245, 245, 245);
     font-size: 1.3vw;
+    line-height: 1;
 }
 
 .blogbox a {

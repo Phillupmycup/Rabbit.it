@@ -140,87 +140,123 @@ $(function() {
   }
   );
 
+
+  // -----------------------Legal Offers Page------------------------------
+
   var imgSrc = $("#diagramImg");
 
   $("#headingOne").click(function () {
     if (imgSrc.attr("src") !== "images/1Select.PNG") {
-      imgSrc.attr("src", "images/1Select.PNG")
+      imgSrc.attr("src", "images/1Select.PNG");
+      $(this).find("span").first().text("X");
+      $(this).parent().siblings().find("span:first-child").text("V");
     } else {
-      imgSrc.attr("src", "images/noneSelect.PNG")
+      imgSrc.attr("src", "images/noneSelect.PNG");
+      $(this).find("span").first().text("V");
     }
   });
   
   $("#headingTwo").click(function () {
     if (imgSrc.attr("src") !== "images/2Select.PNG") {
-      imgSrc.attr("src", "images/2Select.PNG")
+      imgSrc.attr("src", "images/2Select.PNG");
+      $(this).find("span").first().text("X");
+      $(this).parent().siblings().find("span:first-child").text("V");
     } else {
-      imgSrc.attr("src", "images/noneSelect.PNG")
+      imgSrc.attr("src", "images/noneSelect.PNG");
+      $(this).find("span").first().text("V");
     }
   });
 
   $("#headingThree").click(function () {
     if (imgSrc.attr("src") !== "images/3Select.PNG") {
-      imgSrc.attr("src", "images/3Select.PNG")
+      imgSrc.attr("src", "images/3Select.PNG");
+      $(this).find("span").first().text("X");
+      $(this).parent().siblings().find("span:first-child").text("V");
     } else {
-      imgSrc.attr("src", "images/noneSelect.PNG")
+      imgSrc.attr("src", "images/noneSelect.PNG");
+      $(this).find("span").first().text("V");
     }
   });
 
   $("#headingFour").click(function () {
     if (imgSrc.attr("src") !== "images/4Select.PNG") {
-      imgSrc.attr("src", "images/4Select.PNG")
+      imgSrc.attr("src", "images/4Select.PNG");
+      $(this).find("span").first().text("X");
+      $(this).parent().siblings().find("span:first-child").text("V");
     } else {
-      imgSrc.attr("src", "images/noneSelect.PNG")
+      imgSrc.attr("src", "images/noneSelect.PNG");
+      $(this).find("span").first().text("V");
     }
   });
 
   $("#headingFive").click(function () {
     if (imgSrc.attr("src") !== "images/5Select.PNG") {
-      imgSrc.attr("src", "images/5Select.PNG")
+      imgSrc.attr("src", "images/5Select.PNG");
+      $(this).find("span").first().text("X");
+      $(this).parent().siblings().find("span:first-child").text("V");
     } else {
-      imgSrc.attr("src", "images/noneSelect.PNG")
+      imgSrc.attr("src", "images/noneSelect.PNG");
+      $(this).find("span").first().text("V");
     }
   });
 
   $("#headingSix").click(function () {
     if (imgSrc.attr("src") !== "images/6Select.PNG") {
-      imgSrc.attr("src", "images/6Select.PNG")
+      imgSrc.attr("src", "images/6Select.PNG");
+      $(this).find("span").first().text("X");
+      $(this).parent().siblings().find("span:first-child").text("V");
     } else {
-      imgSrc.attr("src", "images/noneSelect.PNG")
+      imgSrc.attr("src", "images/noneSelect.PNG");
+      $(this).find("span").first().text("V");
     }
   });
 
   $("#headingSeven").click(function () {
     if (imgSrc.attr("src") !== "images/7Select.PNG") {
-      imgSrc.attr("src", "images/7Select.PNG")
+      imgSrc.attr("src", "images/7Select.PNG");
+      $(this).find("span").first().text("X");
+      $(this).parent().siblings().find("span:first-child").text("V");
     } else {
-      imgSrc.attr("src", "images/noneSelect.PNG")
+      imgSrc.attr("src", "images/noneSelect.PNG");
+      $(this).find("span").first().text("V");
     }
   });
 
   $("#headingEight").click(function () {
     if (imgSrc.attr("src") !== "images/8Select.PNG") {
-      imgSrc.attr("src", "images/8Select.PNG")
+      imgSrc.attr("src", "images/8Select.PNG");
+      $(this).find("span").first().text("X");
+      $(this).parent().siblings().find("span:first-child").text("V");
     } else {
-      imgSrc.attr("src", "images/noneSelect.PNG")
+      imgSrc.attr("src", "images/noneSelect.PNG");
+      $(this).find("span").first().text("V");
     }
   });
 
   $("#headingNine").click(function () {
     if (imgSrc.attr("src") !== "images/9Select.PNG") {
-      imgSrc.attr("src", "images/9Select.PNG")
+      imgSrc.attr("src", "images/9Select.PNG");
+      $(this).find("span").first().text("X");
+      $(this).parent().siblings().find("span:first-child").text("V");
     } else {
-      imgSrc.attr("src", "images/noneSelect.PNG")
+      imgSrc.attr("src", "images/noneSelect.PNG");
+      $(this).find("span").first().text("V");
     }
   });
 
   $("#headingTen").click(function () {
     if (imgSrc.attr("src") !== "images/10Select.PNG") {
-      imgSrc.attr("src", "images/10Select.PNG")
+      imgSrc.attr("src", "images/10Select.PNG");
+      $(this).find("span").first().text("X");
+      $(this).parent().siblings().find("span:first-child").text("V");
+      
     } else {
-      imgSrc.attr("src", "images/noneSelect.PNG")
+      imgSrc.attr("src", "images/noneSelect.PNG");
+      $(this).find("span").first().text("V");
     }
   });
+
+
   
 });
 
