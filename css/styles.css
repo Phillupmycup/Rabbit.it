@@ -854,6 +854,23 @@ video {
     font-size: 1.5vw;
 }
 
+@media screen and (min-width: 575px) and (max-width: 820px) {
+
+
+    .outoption h2 {
+        font-size: 1.8vw;
+    }
+    
+    .outoption p {
+        color: whitesmoke;
+        font-size: 1.8vw;
+    }
+    
+    .outoption li {
+        font-size: 1.8vw;
+    }
+}
+
 @media screen and (max-width: 575px) {
 
     .outbody .outheader h1 {
@@ -869,16 +886,15 @@ video {
     }
 
     .outoption h2 {
-        font-size: 3.3vw;
+        font-size: 4vw;
     }
     
     .outoption p {
-        color: whitesmoke;
-        font-size: 3.3vw;
+        font-size: 4vw;
     }
     
     .outoption li {
-        font-size: 3.3vw;
+        font-size: 4vw;
     }
 
     
@@ -1003,6 +1019,7 @@ video {
     position: sticky;
     position: -webkit-sticky;
     bottom: 10%;
+    top: 15%;
     }
 
 #diagram {
@@ -1040,7 +1057,7 @@ video {
 #accordion button {
     background-color: rgb(108, 221, 131);
     color: rgb(40, 42, 53);
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     height: fit-content;
     text-decoration: none;  
 }
@@ -1057,52 +1074,33 @@ video {
 
 #accordion li {
     color: whitesmoke;
-    font-size: .9vw;
+    font-size: 1.5vw;
     margin-left: 1%;
 }
 
-@media screen and (min-width: 992px) {
-
-    #diagram {
-        display: flex;
-        justify-content: center;
-    }
-
-    #diagram img {
-        position: sticky;
-        position: -webkit-sticky;
-        bottom: 10%;
-        top: 15%;
-    }
-}    
-
 @media screen and (max-width: 991px) {
 
-    #diagram img {
-        position: sticky;
-        position: -webkit-sticky;
-        bottom: 10%;
-        top: 15%;
-    }
-
     #accordion button {
-        font-size: 3.4vw;
+        font-size: 1.8vw;
     } 
 
     #accordion li {
-        color: whitesmoke;
         font-size: 2.5vw;
         margin-left: 5%;
     }
-
-    #accordion button {
-        font-size: 1.8vw;  
-    }
-    
-    
 }
 
+@media screen and (max-width: 575px) {
 
+    #accordion button {
+        font-size: 2.1vw;
+    } 
+
+    #diagram img {
+        bottom: 10%;
+        top: 50%;
+        }
+}
 
 
 /* ------------------------Rabbit legal project support -------------------------------------------------- */
@@ -1122,6 +1120,17 @@ video {
 .legalsupbody li {
     color: whitesmoke;
     font-size: 1.8vw;
+}
+
+@media screen and (max-width: 575px) {
+
+    .legalsupbody h2 {
+        font-size: 4.5vw;
+    }
+    
+    .legalsupbody li {
+        font-size: 3.5vw;
+    }
 }
 
 
@@ -1357,7 +1366,7 @@ video {
 
 /* ----------------------------------------------Blog page-------------------------------------------------------- */
 
-#blog h1 {
+#blog h1 .blogcontainer {
     font-size: 5.5vw;
     color: rgb(108, 221, 131);
     text-align: center;
@@ -1384,28 +1393,65 @@ video {
 }
 
 .blogbox h5 {
+    /* color: rgb(231, 121, 184); */
     color: rgb(108, 221, 131);
     font-size: 1.6vw;
 }
 
 .blogbox p {
+    /* color: rgb(40, 42, 53); */
     color: rgb(245, 245, 245);
-    font-size: 1.15vw;
+    font-size: 1.3vw;
 }
 
 .blogbox a {
     color: rgb(180, 157, 229);
-    font-size: 1.15vw;
+    font-size: 1.3vw;
 }
 
 .blogbox {
-    width: 30%;
+    margin-bottom: 3%;
 }
 
 .blogborder {
     border: .2vw solid whitesmoke;
 }
 
+/* .blogborder {
+    background-color: rgb(108, 221, 131);
+} */
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    
+    .blogbox h5 {
+        font-size: 3vw;
+    }
+    
+    .blogbox p {
+        font-size: 2vw;
+    }
+    
+    .blogbox a {
+        font-size: 2vw;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    
+    .blogbox h5 {
+        font-size: 4.5vw;
+    }
+    
+    .blogbox p {
+        font-size: 3.5vw;
+    }
+    
+    .blogbox a {
+        font-size: 3.5vw;
+    }
+    
+}
 
 /* ----------------------------------------------Footer -------------------------------------------------------- */
 
