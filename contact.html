@@ -8,7 +8,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript"> 
+    <script type="text/javascript">
+
+      var recaptchaVerifyCallback = function(response) {
+        $('#submit').show();
+      };
+
+      var recaptchaOnloadCallback = function() {
+        grecaptcha.enterprise.render('recaptcha', {
+          'sitekey' : '6LctnvckAAAAAJySpQDL6lgQwPZJR8YJiiG8kshv',
+          'callback' : recaptchaVerifyCallback,
+        });
+      };
 
       function UnCryptMailto( s )
       {
@@ -31,7 +42,7 @@
           location.href=UnCryptMailto( s );
       }
       </script>
-    <title>New website</title>
+    <title>rabbit it</title>
   </head>
 
 
@@ -151,16 +162,22 @@
                     <label for="accept" class="col-form-label" style="display: block;"><input required style="margin-right: 1%" type="checkbox" name="accept" id="accept" value="Yes" >ich habe die Datenschutzerklärung gelesen und akzeptiere diese.</label>
                   </div>
                 </div>
-  
+
                 <div class="row">
+                  <div class="col-lg-12" id="recaptcha">
+                  </div>
+                </div>
+  
+                <div class="row" id="submit">
                   <div class="col-lg-12">
                     <input type="submit" value="Mitteilung senden" class="btn btn-block btn-primary rounded-0 py-2 px-4">
                     <span class="submitting"></span>
                   </div>
                 </div>
               </form>
+              <script src="https://www.google.com/recaptcha/enterprise.js?hl=de-CH&onload=recaptchaOnloadCallback&render=explicit" async defer></script>
   
-              <div id="form-message-warning mt-4"></div> 
+              <div id="form-message-warning" class="mt-4"></div> 
               <div id="form-message-success">
                 Vielen Dank, Ihre Nachricht wurde erfolgreich versendet!
               </div>
@@ -229,7 +246,7 @@
       <br>
       <br>  
       
-      <div class="text-center">&copy; Copyright rabbit it 2022</div> 
+      <div class="text-center">&copy; Copyright rabbit it 2023</div> 
   
       </div>
     </footer>

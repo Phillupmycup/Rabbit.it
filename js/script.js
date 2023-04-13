@@ -34,7 +34,7 @@ $(function() {
 
 					$.ajax({   	
 				      type: "POST",
-				      url: "../php/send-email.php",
+				      url: "/php/contact.php",
 				      data: $(form).serialize(),
 
 				      beforeSend: function() { 
@@ -51,7 +51,7 @@ $(function() {
 		               	}, 1400);
 			               
 			            } else {
-			               $('#form-message-warning').html(msg);
+			               $('#form-message-warning').html("Es ist ein Fehler aufgetreten, bitte versuchen Sie es nochmals.");
 				            $('#form-message-warning').fadeIn();
 				            $submit.css('display', 'none');
 			            }

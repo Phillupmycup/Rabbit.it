@@ -1362,9 +1362,13 @@ video {
     font-weight: bold;
     font-size: 12px;
     color: rgb(40, 42, 53); }
-  
 
+  #submit {
+    margin-top: 1.75rem;
+    display: none; }
 
+  form.mb-5 {
+    margin-bottom: 0!important; }
 
 /* ----------------------------------------------Blog page-------------------------------------------------------- */
 
