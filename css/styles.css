@@ -72,7 +72,7 @@ body {
 
 }
 
-#main , #legal , #interact , #contact, #blog {
+#main , #legal , #interact , #contact, #blog, #team {
     padding: 0%;
     margin-top: 90px;
 }
@@ -139,7 +139,7 @@ button.navbar-toggler {
     }
 
     .navbar-brand {
-        padding-right: 40pt;
+        padding-right: 25pt;
     }
 
 }
@@ -168,6 +168,12 @@ button.navbar-toggler {
 
 
 @media screen and (min-width: 768px) {
+
+    #kontaktbox {
+        margin-top: 20px;
+    }
+
+
     .navbar-dark .navbar-nav #kontakt {
         color: rgb(108, 221, 131);
         border-radius: 68px;
@@ -1372,6 +1378,13 @@ video {
 
 /* ----------------------------------------------Blog page-------------------------------------------------------- */
 
+#blog #blogHeader {
+    font-size: 5vw;
+    color: rgb(108, 221, 131);
+    margin-bottom: 2vw;
+}
+
+
 #blog h1 .blogcontainer {
     font-size: 5.5vw;
     color: rgb(108, 221, 131);
@@ -1399,13 +1412,11 @@ video {
 }
 
 .blogbox h5 {
-    /* color: rgb(231, 121, 184); */
     color: rgb(108, 221, 131);
     font-size: 1.6vw;
 }
 
 .blogbox p {
-    /* color: rgb(40, 42, 53); */
     color: rgb(245, 245, 245);
     font-size: 1.3vw;
     line-height: 1;
@@ -1424,11 +1435,33 @@ video {
     border: .2vw solid whitesmoke;
 }
 
-/* .blogborder {
-    background-color: rgb(108, 221, 131);
-} */
+@media screen and (max-width: 575px) {
+
+    #blog #blogHeader {
+        font-size: 15vw;
+        text-align: center;
+        margin-bottom: 3vw;
+    }
+   
+    .blogbox h5 {
+        font-size: 4.5vw;
+    }
+    
+    .blogbox p {
+        font-size: 3.5vw;
+    }
+    
+    .blogbox a {
+        font-size: 3.5vw;
+    }
+    
+}
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
+
+    #blog #blogHeader {
+        font-size: 10vw;
+    }
     
     .blogbox h5 {
         font-size: 3vw;
@@ -1444,21 +1477,142 @@ video {
     
 }
 
-@media screen and (max-width: 575px) {
+/* ----------------------------------------------Blog post page-------------------------------------------------------- */
+
+.blogpostcontainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.blogpostcontainer h2 {
+    width: 49.8%;
+    display: inline-block;
+    color: rgb(108, 221, 131);
+    font-size: 2.5vw;
+} 
+
+.blogpostcontainer img {
+    max-width: 49.8%;
+    display: inline-block;
+}
+
+.blogpostcontainer p {
+    color: whitesmoke;
+    font-size: 1.5vw;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2vw;
+} 
+
+
+/* ----------------------------------------------Team page-------------------------------------------------------- */
+
+#team #teamHeader {
+    font-size: 5vw;
+    color: rgb(108, 221, 131);
+    margin-bottom: 2vw;
+}
+
+
+#team h1 .teamcontainer {
+    font-size: 5.5vw;
+    color: rgb(108, 221, 131);
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+#team .teamcontainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teamcontainer .row {
+    margin-bottom: 5%;
+}
+
+.teambox img {
+    width: 100%;
+}
+
+.teambox h5 {
+    color: rgb(108, 221, 131);
+    font-size: 1.6vw;
+    margin-bottom: 0;
+}
+
+.teamtext {
+    padding: 2%;
+}
+
+.teambox p {
+    color: rgb(245, 245, 245);
+    font-size: 1.3vw;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.teambox a {
+    color: rgb(180, 157, 229);
+    font-size: 1.3vw;
+}
+
+.teambox {
+    margin-bottom: 3%;
+}
+
+.teamborder {
+    border: .2vw solid whitesmoke;
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+
+    #team #teamHeader {
+        font-size: 10vw;
+    }
     
-    .blogbox h5 {
+    .teambox h5 {
+        font-size: 3vw;
+    }
+    
+    .teambox p {
+        font-size: 2vw;
+    }
+    
+    .teambox a {
+        font-size: 2vw;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+
+    #team #teamHeader {
+        font-size: 15vw;
+        text-align: center;
+        margin-bottom: 3vw;
+    }
+   
+    .teambox h5 {
         font-size: 4.5vw;
     }
     
-    .blogbox p {
+    .teambox p {
         font-size: 3.5vw;
     }
     
-    .blogbox a {
+    .teambox a {
         font-size: 3.5vw;
     }
     
 }
+
+
+
+
 
 /*-----------------------------------------------Terms--------------------------------------------------------------*/
 
