@@ -1,8 +1,0 @@
-stages:
-  - deploy to test.rabbit-it.ch
-
-deploy to test.rabbit-it.ch:
-  stage: deploy to test.rabbit-it.ch
-  script:
-     - /usr/local/libexec/deploy-website.sh
-  when: manual
