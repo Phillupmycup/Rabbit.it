@@ -143,100 +143,22 @@ $(function() {
 
   // -----------------------Legal Offers Page------------------------------
 
-$("#headingOne").click(function () {
+  var acordTab = $(this).siblings().attr("class");
+  var closedTab = acordTab !== "show";
+  var heading = $(".card-header");
 
-    if ($(this).find("span").first().text("X")) {
-      $(this).find("span").first().text("V");
-    }
-    
-    if ($(this).siblings().attr("class") !== "show") {
+  function tabIcon () {
+    if (closedTab) {
       $(this).find("span").first().text("X");
       $(this).parent().siblings().find("span:first-child").text("V");
+    } else {
+      $(this).find("span").first().text("V");
     }
-  });
+  };
+
+  heading.click(tabIcon);
+
   
-  $("#headingTwo").click(function () {
-    if ($(this).siblings().attr("class") !== "show") {
-      $(this).find("span").first().text("X");
-      $(this).parent().siblings().find("span:first-child").text("V");
-    } else {
-      $(this).find("span").first().text("V");
-    }
-  });
-
-  $("#headingThree").click(function () {
-    if ($(this).siblings().attr("class") !== "show") {
-      $(this).find("span").first().text("X");
-      $(this).parent().siblings().find("span:first-child").text("V");
-    } else {
-      $(this).find("span").first().text("V");
-    }
-  });
-
-  $("#headingFour").click(function () {
-    if ($(this).siblings().attr("class") !== "show") {
-      $(this).find("span").first().text("X");
-      $(this).parent().siblings().find("span:first-child").text("V");
-    } else {
-      $(this).find("span").first().text("V");
-    }
-  });
-
-  $("#headingFive").click(function () {
-    if ($(this).siblings().attr("class") !== "show") {
-      $(this).find("span").first().text("X");
-      $(this).parent().siblings().find("span:first-child").text("V");
-    } else {
-      $(this).find("span").first().text("V");
-    }
-  });
-
-  $("#headingSix").click(function () {
-    if ($(this).siblings().attr("class") !== "show") {
-      $(this).find("span").first().text("X");
-      $(this).parent().siblings().find("span:first-child").text("V");
-    } else {
-      $(this).find("span").first().text("V");
-    }
-  });
-
-  $("#headingSeven").click(function () {
-    if ($(this).siblings().attr("class") !== "show") {
-      $(this).find("span").first().text("X");
-      $(this).parent().siblings().find("span:first-child").text("V");
-    } else {
-      $(this).find("span").first().text("V");
-    }
-  });
-
-  $("#headingEight").click(function () {
-    if ($(this).siblings().attr("class") !== "show") {
-      $(this).find("span").first().text("X");
-      $(this).parent().siblings().find("span:first-child").text("V");
-    } else {
-      $(this).find("span").first().text("V");
-    }
-  });
-
-  $("#headingNine").click(function () {
-    if ($(this).siblings().attr("class") !== "show") {
-      $(this).find("span").first().text("X");
-      $(this).parent().siblings().find("span:first-child").text("V");
-    } else {
-      $(this).find("span").first().text("V");
-    }
-  });
-
-  $("#headingTen").click(function () {
-    if ($(this).siblings().attr("class") !== "show") {
-      $(this).find("span").first().text("X");
-      $(this).parent().siblings().find("span:first-child").text("V");
-    } else {
-      $(this).find("span").first().text("V");
-    }
-  });
-
-
 
   // var imgSrc = $("#diagramImg");
 
