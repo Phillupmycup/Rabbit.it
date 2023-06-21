@@ -1563,52 +1563,18 @@ video {
         color: rgb(108, 221, 131);
     } 
     
-}
+} */
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
-
-    .blogpostcontainer {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .blogheader {
-        width: 49.8%;
-        display: inline-block;
-    }
-    
-    
-    .blogpostcontainer h2 {
-        color: rgb(108, 221, 131);
-        font-size: 2.5vw;
-    } 
     
     .blogpostcontainer h3 {
-        color: whitesmoke;
-        font-size: 1.8vw;
-        margin-top: 3%;
+        font-size: 2.1vw;
     } 
-    
-    .blogpostcontainer img {
-        max-width: 49.8%;
-        display: inline-block;
-    }
     
     .blogpostcontainer p {
-        color: whitesmoke;
-        font-size: 1.5vw;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 2vw;
-    } 
-    
-    .blogpostcontainer span {
-        font-weight: bold;
-        color: rgb(108, 221, 131);
-    } 
-    
-} */
+        font-size: 1.9vw;
+    }    
+}
 
 
 /* ----------------------------------------------Team page-------------------------------------------------------- */
