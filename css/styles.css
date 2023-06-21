@@ -1477,7 +1477,7 @@ video {
     
 }
 
-/* ----------------------------------------------Blog post page-------------------------------------------------------- */
+/* ----------------------------------------------Blog posts page-------------------------------------------------------- */
 
 .blogpostcontainer {
     width: 80%;
@@ -1485,12 +1485,21 @@ video {
     margin-right: auto;
 }
 
-
-.blogpostcontainer h2 {
+.blogheader {
     width: 49.8%;
     display: inline-block;
+}
+
+
+.blogpostcontainer h2 {
     color: rgb(108, 221, 131);
     font-size: 2.5vw;
+} 
+
+.blogpostcontainer h3 {
+    color: whitesmoke;
+    font-size: 1.8vw;
+    margin-top: 3%;
 } 
 
 .blogpostcontainer img {
@@ -1504,6 +1513,11 @@ video {
     padding-left: 0;
     padding-right: 0;
     padding-top: 2vw;
+} 
+
+.blogpostcontainer span {
+    font-weight: bold;
+    color: rgb(108, 221, 131);
 } 
 
 
