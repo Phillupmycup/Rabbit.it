@@ -245,6 +245,13 @@ video {
     width: 100%;
 }
 
+#imgaudit {
+    margin-left: -7%;
+    margin-top: -11.4%;
+    margin-bottom: -11.4%;
+    width: 100%;
+}
+
 #main .box {
     background-color: rgb(180, 157, 229);
     display: block;
@@ -542,6 +549,14 @@ video {
     #imgsupport {
         height: 85vh;
         margin-left: -300px;
+        display: block;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    #imgaudit {
+        height: 85vh;
+        margin-left: -200px;
         display: block;
         width: auto;
         margin-bottom: 0;
@@ -1427,6 +1442,12 @@ video {
     line-height: 1;
 }
 
+.blogbox p span {
+    font-weight: bold;
+}
+
+
+
 .blogbox a {
     color: rgb(180, 157, 229);
     font-size: 1.3vw;
@@ -1493,6 +1514,7 @@ video {
 .blogheader {
     width: 49.7%;
     display: inline-block;
+    vertical-align: middle;
 }
 
 
